@@ -1,4 +1,5 @@
 $bliss: 'BlissProExtraBold';
+$rub: 'ALS Rubl';
 @font-face {
     font-family: 'BlissProExtraBold';
     src: url('../fonts/BlissProExtraBold.eot');
@@ -7,4 +8,11 @@ $bliss: 'BlissProExtraBold';
          url('../fonts/BlissProExtraBold.woff') format('woff'),
          url('../fonts/BlissProExtraBold.ttf') format('truetype'),
          url('../fonts/BlissProExtraBold.svg#BlissProExtraBold') format('svg');
+}
+
+@font-face {
+	font-family: 'ALS Rubl';
+	font-style: normal;
+	font-weight: normal;
+	src: local('ALS Rubl'), url('../fonts/rouble.woff') format('woff');
 }

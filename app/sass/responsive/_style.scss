@@ -3,7 +3,15 @@
 }
 
 @media only screen and (max-width: 980px) {
-	
+	.nav>li>a {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+	.navigation--dropped li a {
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 13px;
+	}
 }
 
 @media only screen and (max-width: 770px) {
@@ -11,7 +19,26 @@
 }
 
 @media only screen and (max-width: 736px) {
-	
+	.navigation--dropped li {
+		display: block;
+		color: #FFF;
+	}
+	li.dropdown-cust.open a {
+		color: #FFF;
+		&:after {
+			content: none;
+		}
+	}
+	.divider-vert, .dropdown-menu .divider-vert {
+	    height: 1px;
+	    width: 100%;
+    }
+    .navigation .nav>li.dropdown-cust.open .dropdown-menu {
+    	height: auto;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    	color: #FFF;
+    }
 }
 
 @media only screen and (max-width: 500px) {
