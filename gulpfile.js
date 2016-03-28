@@ -58,4 +58,4 @@ gulp.task('watch', function() {
   gulp.watch('app/js/*', function() {
        gulp.run('compress');
   });
-});
+});4
