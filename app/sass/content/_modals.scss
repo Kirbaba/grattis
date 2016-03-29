@@ -1,0 +1,25 @@
+.modal-body  {
+	p {
+		float: none;
+	}
+	button.btn.btn-default {
+	    margin-right: 0;
+	}
+	p.form-control {
+		margin: 0;
+	}
+	.open>.dropdown-menu {
+	    width: 100%;
+	    margin: 0;
+	    @include border-radius(0 0 4px 4px);
+	}
+	.dropdown-menu>li>a {
+		@include link {
+			color: #333;
+			background-color: #F9F9F9;
+		}
+	}
+	.dropdown {
+		margin: 10px;
+	}
+}

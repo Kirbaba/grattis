@@ -59,118 +59,159 @@
                     0 <i class="fa fa-rub"></i>  <b class="caret"></b>
                 </a></li>                
             </ul>
-            </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
-        <!-- open .main -->
-        <main class="main">
-            <!-- open .container -->
-            <div class="container">
-                <!-- open .wrapper -->
-                <section class="wrapper">
-                    <a href="#" class="link--back">← К списку доменов</a>
-                    <h3 class="page-title">
-                        Управление потоками домена хочу-поздравить.рф 
-                        <i class="fa fa-question-circle"  rel="tooltip" title="Текст"></i>     
-                        <a class="btn btn-primary pull-right" role="button">Привязать поток к домену</a>
-                    </h3>
-                    <blockquote class="blockquote-magenta">
-                        <p>Если вы хотите привязать несколько потоков к одному домену, нажмите "Привязать поток к домену". Для вас будут сгенерированы поддомены, на короторых будут
-                        отображаться лендинги, указанные в потоках. <a href="#">Подробная инструкция.</a></p>
-                    </blockquote>
-                    <!-- open .row -->
-                    <div class="row">
-                        <!-- open .col-sm-12 -->
-                        <div class="col-sm-12">
-                            <div class="table-responsive table-full-width">
-                                <table class="table table-hover table-striped">
-                                    <colgroup>
-                                        <col class="col-md-5">
-                                        <col class="col-md-6">
-                                        <col class="col-md-1">
-                                    </colgroup>
+<!-- open .main -->
+<main class="main">
+    <!-- open .container -->
+    <div class="container">
+        <!-- open .wrapper -->
+        <section class="wrapper">
+            <a href="#" class="link--back">← К списку доменов</a>
+            <h3 class="page-title">
+                Управление потоками домена хочу-поздравить.рф 
+                <i class="fa fa-question-circle"  rel="tooltip" title="Текст"></i>     
+                <a href="#nowhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#addSreams">Привязать поток к домену</a>
+            </h3>
+            <blockquote class="blockquote-magenta">
+                <p>Если вы хотите привязать несколько потоков к одному домену, нажмите "Привязать поток к домену". Для вас будут сгенерированы поддомены, на короторых будут
+                отображаться лендинги, указанные в потоках. <a href="#">Подробная инструкция.</a></p>
+            </blockquote>
+            <!-- open .row -->
+            <div class="row">
+                <!-- open .col-sm-12 -->
+                <div class="col-sm-12">
+                    <div class="table-responsive table-full-width">
+                        <table class="table table-hover table-striped">
+                            <colgroup>
+                                <col class="col-md-5">
+                                <col class="col-md-6">
+                                <col class="col-md-1">
+                            </colgroup>
 
 
-                                    <thead>
-                                        <th>Название потока</th>
-                                        <th>Ваша ссылка</th>
-                                        <th class="text-center">Управление</th>
-                                        
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Портал - 3 уе</td>
-                                            <td><!-- open .highlight -->
-                                                <div class="well well-sm well-left">
-                                                    http://12.хочу-поздравить.рф
-                                                </div>
-                                                или
-                                                <div class="well well-sm well-left">
-                                                    http://хочу-поздравить.рф/?tk=12
-                                                </div>
-                                            <!-- close .highlight --></td>
-                                            <td class="text-center">
-                                                <a href="#" class="table--control">
-                                                    <i class="fa fa-cog"></i></a>
-                                                    <a href="#" class="table--control remove-btn"><i class="fa fa-times"></i></a>
-                                            </td>
-                                           
-                                        </tr>
-                                        <tr>
-                                            <td>Портал - 5 уе</td>
-                                            <td>
-                                                <div class="well well-sm well-left">
-                                                    http://13.хочу-поздравить.рф
-                                                </div>
-                                                или
-                                                <div class="well well-sm well-left">
-                                                    http://хочу-поздравить.рф/?tk=13
-                                                </div>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="#" class="table--control set-btn">
-                                                    <i class="fa fa-cog"></i>
-                                                </a>
-                                                <a href="#" class="table--control remove-btn">
-                                                    <i class="fa fa-times"></i>
-                                                </a>
-                                            </td>
-                                           
-                                        </tr>
-                                        <tr>
-                                            <td>Портал - 10 уе</td>
-                                            <td>            
-                                                <div class="well well-sm well-left">
-                                                    http://14.хочу-поздравить.рф
-                                                </div>
-                                                или
-                                                <div class="well well-sm well-left">
-                                                    http://хочу-поздравить.рф/?tk=14
-                                                </div>
-                                            </td>
-                                            <td class="text-center">
-                                                <a href="#" class="table--control">
-                                                    <i class="fa fa-cog"></i></a>
-                                                    <a href="#" class="table--control remove-btn"><i class="fa fa-times"></i></a>
-                                            </td>
-                                           
-                                        </tr>
-                                       
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- close .col-sm-12 -->
+                            <thead>
+                                <th>Название потока</th>
+                                <th>Ваша ссылка</th>
+                                <th class="text-center">Управление</th>
+                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Портал - 3 уе</td>
+                                    <td><!-- open .highlight -->
+                                        <div class="well well-sm well-left">
+                                            http://12.хочу-поздравить.рф
+                                        </div>
+                                        или
+                                        <div class="well well-sm well-left">
+                                            http://хочу-поздравить.рф/?tk=12
+                                        </div>
+                                    <!-- close .highlight --></td>
+                                    <td class="text-center">
+                                        <a href="#" class="table--control">
+                                            <i class="fa fa-cog"></i></a>
+                                            <a href="#" class="table--control remove-btn"><i class="fa fa-times"></i></a>
+                                    </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Портал - 5 уе</td>
+                                    <td>
+                                        <div class="well well-sm well-left">
+                                            http://13.хочу-поздравить.рф
+                                        </div>
+                                        или
+                                        <div class="well well-sm well-left">
+                                            http://хочу-поздравить.рф/?tk=13
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="table--control set-btn">
+                                            <i class="fa fa-cog"></i>
+                                        </a>
+                                        <a href="#" class="table--control remove-btn">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Портал - 10 уе</td>
+                                    <td>            
+                                        <div class="well well-sm well-left">
+                                            http://14.хочу-поздравить.рф
+                                        </div>
+                                        или
+                                        <div class="well well-sm well-left">
+                                            http://хочу-поздравить.рф/?tk=14
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="table--control">
+                                            <i class="fa fa-cog"></i></a>
+                                            <a href="#" class="table--control remove-btn"><i class="fa fa-times"></i></a>
+                                    </td>
+                                   
+                                </tr>
+                               
+                            </tbody>
+                        </table>
                     </div>
-                    <!-- close .row -->
-                             
-                </section>
-                <!-- close .wrapper -->
+                </div>
+                <!-- close .col-sm-12 -->
             </div>
-            <!-- close .container -->
-        </main>
-        <!-- close .main -->
+            <!-- close .row -->
+                     
+        </section>
+        <!-- close .wrapper -->
+    </div>
+    <!-- close .container -->
+</main>
+<!-- close .main -->
+
+<div class="modal fade" id="addSreams" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Привязка потока к домену хочу-поздравить.рф</h4>
+            </div>
+            <div class="modal-body">
+                <p>Выберите поток для привязки:</p>
+                <!-- open .row -->
+                <div class="row">
+                    <!-- open .col-sm-12 -->
+                    <div class="col-sm-12">
+                        <div class="dropdown" id="drop2">
+                            <div id="dLabel2" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                <span class="sreamnumber">#1 Портал - без политиков</span>
+                                <span class="pull-right">
+                                    <span class="caret"></span>
+                                </span>
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li><a href="#" data-value="#1 Портал - без политиков">#1 Портал - без политиков</a></li>
+                                <li><a href="#" data-value="#2 Портал - без политиков">#2 Портал - без политиков</a></li>
+                                <li><a href="#" data-value="#3 Портал - без политиков">#3 Портал - без политиков</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- close .col-sm-12 -->
+                </div>
+                <!-- close .row -->
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary">Привязать</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 </body>
     <!-- <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script> -->
