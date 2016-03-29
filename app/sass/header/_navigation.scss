@@ -20,6 +20,16 @@
 		a {
 			padding-top: 0;
 			padding-bottom: 0;
+			span {
+				padding-top: 9px;
+				padding-bottom: 9px;
+				display: block;
+			}
+			i {
+				font-style: normal;
+				vertical-align: baseline;
+				font-weight: 300;
+			}
 		}
 	}
 	.nav > li.dropdown-cust.open {

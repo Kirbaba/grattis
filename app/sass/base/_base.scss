@@ -160,3 +160,10 @@ blockquote.blockquote-magenta {
     }
 }
 
+.symb--rub{
+	font-family: $rub;
+}
+
+pre code {
+    white-space: pre-line;
+}

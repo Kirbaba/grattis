@@ -69,15 +69,14 @@
     <div class="container">
         <!-- open .wrapper -->
         <section class="wrapper">
-            <a href="#" class="link--back">← К списку доменов</a>
+           
             <h3 class="page-title">
-                Управление потоками домена хочу-поздравить.рф 
-                <i class="fa fa-question-circle"  rel="tooltip" title="Текст"></i>     
-                <a href="#nowhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#addSreams">Привязать поток к домену</a>
+                Парковка доменов   
+                <a href="#nowhere" class="btn btn-primary pull-right">Добавить домен</a>
             </h3>
             <blockquote class="blockquote-magenta">
-                <p>Если вы хотите привязать несколько потоков к одному домену, нажмите "Привязать поток к домену". Для вас будут сгенерированы поддомены, на короторых будут
-                отображаться лендинги, указанные в потоках. <a href="#">Подробная инструкция.</a></p>
+                <p>Чтобы припарковать свой домен, пожалуйста, пропишите в настройках панели регистратора наши NS-сервера: <b>ns1.grattis.ru, ns2.grattis.ru</b> <br />
+<a href="#">Инструкция для NIC.ru, REG.ru, 2domains.ru</a>.</p>
             </blockquote>
             <!-- open .row -->
             <div class="row">
@@ -86,73 +85,57 @@
                     <div class="table-responsive table-full-width">
                         <table class="table table-hover table-striped">
                             <colgroup>
+                                <col class="col-md-2">
+                                <col class="col-md-2">
                                 <col class="col-md-5">
-                                <col class="col-md-6">
-                                <col class="col-md-1">
+                                <col class="col-md-4">
                             </colgroup>
 
 
                             <thead>
-                                <th>Название потока</th>
-                                <th>Ваша ссылка</th>
+                                <th>Домен</th>
+                                <th class="text-center">Статус</th>
+                                <th>Поток по умолчанию</th>
                                 <th class="text-center">Управление</th>
                                 
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Портал - 3 уе</td>
-                                    <td><!-- open .highlight -->
-                                        <div class="well well-sm well-left">
-                                            http://12.хочу-поздравить.рф
-                                        </div>
-                                        или
-                                        <div class="well well-sm well-left">
-                                            http://хочу-поздравить.рф/?tk=12
-                                        </div>
-                                    <!-- close .highlight --></td>
+                                    <td class="domain--name">хочу-поздравить.рф</td>
+                                    <td class="text-center"><span class="label label-success">Активен</span></td>
+                                    <td>Портал аудио поздравлений - трафик с директа</td>
                                     <td class="text-center">
+                                        <a href="#">Управление потоками</a>
                                         <a href="#" class="table--control">
                                             <i class="fa fa-cog"></i></a>
-                                            <a href="#" class="table--control remove-btn"><i class="fa fa-times"></i></a>
+                                            <a href="#" class="table--control remove-btn"  data-toggle="modal" data-target="#delDomain"><i class="fa fa-times"></i></a>
                                     </td>
                                    
                                 </tr>
                                 <tr>
-                                    <td>Портал - 5 уе</td>
-                                    <td>
-                                        <div class="well well-sm well-left">
-                                            http://13.хочу-поздравить.рф
-                                        </div>
-                                        или
-                                        <div class="well well-sm well-left">
-                                            http://хочу-поздравить.рф/?tk=13
-                                        </div>
-                                    </td>
+                                    <td class="domain--name">поздравь.рф</td>
+                                    <td class="text-center"><span class="label label-warning">Ожидание NS-записей</span></td>
+                                    <td>Поток 2</td>
                                     <td class="text-center">
+                                        <a href="#">Управление потоками</a>
                                         <a href="#" class="table--control set-btn">
                                             <i class="fa fa-cog"></i>
                                         </a>
-                                        <a href="#" class="table--control remove-btn">
+                                        <a href="#" class="table--control remove-btn"  data-toggle="modal" data-target="#delDomain">
                                             <i class="fa fa-times"></i>
                                         </a>
                                     </td>
                                    
                                 </tr>
                                 <tr>
-                                    <td>Портал - 10 уе</td>
-                                    <td>            
-                                        <div class="well well-sm well-left">
-                                            http://14.хочу-поздравить.рф
-                                        </div>
-                                        или
-                                        <div class="well well-sm well-left">
-                                            http://хочу-поздравить.рф/?tk=14
-                                        </div>
-                                    </td>
+                                    <td class="domain--name">pozdrav.ru</td>
+                                    <td class="text-center"><span class="label label-default">Неактивен</span</td>
+                                    <td>8 марта</td>
                                     <td class="text-center">
+                                        <a href="#">Управление потоками</a>
                                         <a href="#" class="table--control">
                                             <i class="fa fa-cog"></i></a>
-                                            <a href="#" class="table--control remove-btn"><i class="fa fa-times"></i></a>
+                                            <a href="#" class="table--control remove-btn"  data-toggle="modal" data-target="#delDomain"><i class="fa fa-times"></i></a>
                                     </td>
                                    
                                 </tr>
@@ -172,37 +155,15 @@
 </main>
 <!-- close .main -->
 
-<div class="modal fade" id="addSreams" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="delDomain" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Привязка потока к домену хочу-поздравить.рф</h4>
+                <h4 class="modal-title">Удаление домена</h4>
             </div>
             <div class="modal-body">
-                <p>Выберите поток для привязки:</p>
-                <!-- open .row -->
-                <div class="row">
-                    <!-- open .col-sm-12 -->
-                    <div class="col-sm-12">
-                        <div class="dropdown" id="drop2">
-                            <div id="dLabel2" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                <span class="sreamnumber">#1 Портал - без политиков</span>
-                                <span class="pull-right">
-                                    <span class="caret"></span>
-                                </span>
-                            </div>
-                            <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a href="#" data-value="#1 Портал - без политиков">#1 Портал - без политиков</a></li>
-                                <li><a href="#" data-value="#2 Портал - без политиков">#2 Портал - без политиков</a></li>
-                                <li><a href="#" data-value="#3 Портал - без политиков">#3 Портал - без политиков</a></li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    <!-- close .col-sm-12 -->
-                </div>
-                <!-- close .row -->
+                <p>Вы действительно хотите удалить домен  из <b id="domain--name"></b> системы?</p>
                 
             </div>
             <div class="modal-footer">

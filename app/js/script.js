@@ -1,3 +1,4 @@
+jQuery(document).ready(function($) {
     //  Activate the tooltips   
     $('[rel="tooltip"]').tooltip();
 if (jQuery('#chart').length > 0) {
@@ -6,7 +7,7 @@ if (jQuery('#chart').length > 0) {
   Chart.defaults.global.scaleOverride          = true;
   Chart.defaults.global.scaleShowLabels        = false;
   Chart.defaults.global.scaleSteps             = 5;
-  Chart.defaults.global.scaleStepWidth         = 10;
+  Chart.defaults.global.scaleStepWidth         = 5;
   Chart.defaults.global.scaleStartValue        = 0;
   Chart.defaults.global.tooltipFillColor       = '#FFFFFF';
   Chart.defaults.global.tooltipFontColor       = '#dfdfdf';
@@ -32,7 +33,7 @@ if (jQuery('#chart').length > 0) {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)", 
-              //data: [80,65, 59, 80, 81, 56, 55,81, 56, 55, 44]
+            data: [8,6, 5, 8, 8, 5, 5,8, 6, 5, 4]
           }
       ]
   };
@@ -45,9 +46,22 @@ if (jQuery('#chart').length > 0) {
 }
 
 
-$(function() {
+
   $('.dropdown-menu a').click(function() {
      console.log($(this).attr('data-value'));
     $(this).closest('.dropdown').find('span.sreamnumber').text($(this).attr('data-value'));
   });
+
+  $('.remove-btn').click(function(){
+    var domain_name = $(this).parent().parent().find('.domain--name').text();
+    $('#domain--name').text(domain_name);
+  });
+
+  $("#checkAll").change(function () {
+    $("input:checkbox").prop('checked', $(this).prop("checked"));
+  });
+
 });
+   
+
+

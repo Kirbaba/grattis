@@ -53,6 +53,17 @@
     .l-chart {
     	margin: 15px 0;
     }
+    .open>.dropdown-menu {
+	    width: 100%;
+	    margin: 0;
+	    @include border-radius(0 0 4px 4px);
+	}
+	.dropdown-menu>li>a {
+		@include link {
+			color: #333;
+			background-color: #F9F9F9;
+		}
+	}
 }
 
 h4.chart--result {
@@ -69,3 +80,25 @@ h4.chart--all {
 	color: #333;
 }
 
+
+.empty--message {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 150px 0;
+	text-align: center;
+	color: #999;
+	h3 {
+		font-size: 26px;
+		color: #999;
+	}
+	p {
+		color: #999;
+	}
+}
+
+.form-control {
+	margin-bottom: 15px;
+	resize: vertical;
+}

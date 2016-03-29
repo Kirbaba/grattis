@@ -16,6 +16,9 @@ a.table--control {
 	i {
 		font-size: 18px;
 	}
+	@include link {
+		text-decoration: none;
+	}
 }
 
 .set-btn {
@@ -32,4 +35,23 @@ a.table--control {
 	@include link {
 		opacity: 1;
 	}
+}
+
+.table {
+	margin-top: 20px;
+}
+
+.row__not-active {
+	color: #878787;
+	a {
+		cursor: default;
+		color: #878787;
+		text-decoration: none;
+	}
+}
+
+.table--check {
+	vertical-align: text-bottom;
+	margin-top: 0;
+	margin-right: 15px!important;
 }

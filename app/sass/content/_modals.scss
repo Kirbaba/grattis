@@ -22,4 +22,24 @@
 	.dropdown {
 		margin: 10px;
 	}
+	.form-control {
+		height: 34px;
+		padding: 0;
+		line-height: 34px;
+		span {
+			padding: 6px 12px; 
+		}
+		span.pull-right, span.caret {
+			padding: 0;
+		}
+		span.pull-right {
+			border-left: 1px solid #ccc;
+			height: 33px;
+			padding: 0 10px;
+		}
+	}
+	.help--info {
+		font-size: 12px;
+		color: #777;
+	}
 }
