@@ -1,0 +1,35 @@
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	vertical-align: middle;
+}
+
+.well-left {
+	display: inline-block;
+	margin: 0 10px;
+	&:first-of-type {
+		margin-left: 0;
+	}
+}
+
+
+a.table--control {
+	margin: 0 5px;
+	i {
+		font-size: 18px;
+	}
+}
+
+.set-btn {
+	@include link {
+		text-decoration: none;
+	}
+}
+
+.remove-btn {	
+	opacity: 0.2;
+	i {
+		color: red!important;
+	}
+	@include link {
+		opacity: 1;
+	}
+}
