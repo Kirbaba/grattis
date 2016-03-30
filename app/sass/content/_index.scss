@@ -104,3 +104,36 @@ h4.chart--all {
 	margin-bottom: 15px;
 	resize: vertical;
 }
+
+.help {
+	&__menu {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #dddddd;
+	}
+	&--list {
+		padding: 0;
+		margin-bottom: 15px;
+		li {
+			margin: 5px 0;
+		}
+	}
+	&--foto-wrap {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.gallery--box {
+	display: inline-block;
+	img {
+		max-width: 100%;
+		margin: 25px 25px 25px 0;
+	}
+}

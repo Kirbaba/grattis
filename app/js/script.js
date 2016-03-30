@@ -43,6 +43,8 @@ if (jQuery('#chart').length > 0) {
   }
 
   var chart = new Chart(chart).Line(data, op);
+
+
 }
 
 
@@ -62,6 +64,13 @@ if (jQuery('#chart').length > 0) {
   });
 
 });
+
+  (function () {
+         lightbox.option({
+            'showImageNumberLabel': false,
+            'wrapAround': true
+         });
+  })(jQuery);
    
 
 
