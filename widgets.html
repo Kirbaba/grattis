@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/fotorama.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="sass/style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+<nav class="navbar navbar-default navigation" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" />
+                Grattis
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Cтатистика</a></li>                
+                <li class="dropdown-cust">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Инструменты </a>
+                    <ul class="dropdown-menu navigation--dropped">
+                        <li><a href="#">Источники</a></li>
+                        <li class="divider-vert"></li>
+                        <li><a href="#">Виджеты</a></li>
+                        <li><a href="#">Готовые разделы</a></li>                        
+                        <li><a href="#">Витрины</a></li>
+                        <li class="divider-vert"></li>
+                        <li><a href="#">Сервисы</a></li>
+                        <li><a href="#">Парковка домена</a></li>
+                        <li class="divider-vert"></li>                        
+                        <li><a href="#">Реферальная программа</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Форум</a></li>
+                <li><a href="#">Поддержка <b class="caret"></b></a></li>
+                <li class="divider-vert"></li>
+                <li class="navigation--user"><a href="#">
+                    <img src="img/Layer-1.png" alt="" class="avatar" />
+                    0 <i class="symb--rub">a</i>  <b class="caret"></b>
+                </a></li>                
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- open .main -->
+<main class="main">
+    <!-- open .container -->
+    <div class="container">
+        <!-- open .wrapper -->
+        <section class="wrapper">
+            <h3 class="page-title">
+                Виджеты
+                <i class="fa fa-question-circle"  rel="tooltip" title="Текст"></i> 
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Массовые действия <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Действие</a></li>
+                        <li><a href="#">Действие</a></li>
+                        <li><a href="#">Действие</a></li>
+                        <li><a href="#">Действие</a></li>
+                    </ul>
+                </div> 
+                <a href="#nowhere" class="btn btn-primary pull-right" role="button">Добавить виджет</a>
+            </h3>
+            <!-- open .row -->
+            <div class="row">
+                <!-- open .col-sm-12 -->
+                <div class="col-sm-12">
+                    <div class="table-responsive table-full-width">
+                        <table class="table table-hover table-striped">
+                            <colgroup>
+                                <col class="col-md-2">
+                                <col class="col-md-4">
+                                <col class="col-md-4">
+                                <col class="col-md-2">
+                                <col class="col-md-2">
+                            </colgroup>
+
+
+                            <thead>
+                                <th><input type="checkbox" id="checkAll"class="table--check"/> #</th>
+                                <th>Название</th>
+                                <th>Источник</th>
+                                <th>Тип</th>                                
+                                <th class="text-center">Управление</th>                                
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="table--check"/>1775</td>
+                                    <td>Виджет 1</td>                                    
+                                    <td>pozdrav.ru</td>
+                                    <td>Стандартный</td>
+                                    <td class="text-center">
+                                        <a href="#" class="table--control" data-toggle="modal" data-target="#widget--code">
+                                            <i class="fa fa-code"></i>
+                                        </a>
+                                        <a href="#" class="table--control">
+                                            <i class="fa fa-cog"></i>
+                                        </a>
+                                        <a href="#" class="table--control remove-btn"  data-toggle="modal" data-target="#delDomain">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="table--check"/>24445</td>
+                                    <td>На главной</td>                                    
+                                    <td>прикольно-поздравить.рф</td>
+                                    <td>Праздничный</td>
+                                    <td class="text-center">
+                                        <a href="#" class="table--control" data-toggle="modal" data-target="#widget--code">
+                                            <i class="fa fa-code"></i>
+                                        </a>
+                                        <a href="#" class="table--control">
+                                            <i class="fa fa-cog"></i>
+                                        </a>
+                                        <a href="#" class="table--control remove-btn"  data-toggle="modal" data-target="#delDomain">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="table--check"/>344332</td>
+                                    <td>Именные поздравления</td>
+                                   
+                                    <td>прикольно-поздравить.рф</td>
+                                    <td>Праздничный</td>
+                                    <td class="text-center">
+                                        <a href="#" class="table--control" data-toggle="modal" data-target="#widget--code">
+                                            <i class="fa fa-code"></i>
+                                        </a>
+                                        <a href="#" class="table--control">
+                                            <i class="fa fa-cog"></i>
+                                        </a>
+                                        <a href="#" class="table--control remove-btn"  data-toggle="modal" data-target="#delDomain">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- close .col-sm-12 -->
+            </div>
+            <!-- close .row -->
+                     
+        </section>
+        <!-- close .wrapper -->
+    </div>
+    <!-- close .container -->
+</main>
+<!-- close .main -->
+<div class="modal fade" id="delDomain" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Удаление домена</h4>
+            </div>
+            <div class="modal-body">
+                <p>Вы действительно хотите удалить домен  из <b id="domain--name"></b> системы?</p>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary">Привязать</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="widget--code" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Код виджета "На главной"</h4>
+            </div>
+            <div class="modal-body">
+            
+            <pre>
+                <code>
+                    &lt;!--noindex--&gt;&lt;div id="grattis_24"&gt;&lt;script type="text/javascript"&gt;
+                    (function(){var func, s, i; func=function(){GRATTIS.widget(24)};
+                    if(typeof GRATTIS==="undefined"){s=document.createElement("script");
+                    s.type="text/javascript";s.async=true;s.defer=true;
+                    s.src="//cdn"+Math.round((Math.random() * 3) + 1)+".grattis.ru/publicdata/code.js?r="+(Math.random()*1000|0);
+                    i=setInterval(function(){if(typeof GRATTIS!=="undefined"){func();clearInterval(i)}},100);
+                    document.getElementsByTagName("head")[0].appendChild(s)}else{func()}})();
+                    &lt;/script&gt;&lt;/div&gt;&lt;!--/noindex--&gt;
+                </code>
+            </pre>
+            <small class="help--info">Активация виджета занимает до 30 минут после установки кода. Обязательно <a href="#">прочитайте статью</a>, почему виджет нужно
+установить вверху страницы и как это влияет на ваш доход.</small>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default">Скопировать в буфер</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+    <!-- <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script> -->
+    <script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/fotorama.js" type="text/javascript"></script>
+    <script src="Chart.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="js/script.min.js" type="text/javascript"></script>
+</html>

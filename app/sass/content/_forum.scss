@@ -1,0 +1,17 @@
+.forum{
+	&--title {
+		display: block;
+		font-weight: bold;
+	}
+	&--date {
+		display: block;
+		font-size: 12px;
+		small {
+			font-size: 12px;
+			color: #999;
+		}
+	}
+	&--head {
+		color: #ADADAD;
+	}
+}
