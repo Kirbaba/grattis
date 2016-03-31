@@ -65,6 +65,20 @@ if (jQuery('#chart').length > 0) {
     $("input:checkbox").prop('checked', $(this).prop("checked"));
   });
 
+  if ($('.dropdown-cust').hasClass('open') ){
+      $('.wrapper').css('margin-top', '40px');
+    } else {
+      $('.wrapper').css('margin-top', '0');
+    }
+
+  $('.dropdown-cust').on('click', function() {
+    if ($(this).hasClass('open') ){
+      $('.wrapper').css('margin-top', '0');
+    } else {
+      $('.wrapper').css('margin-top', '40px');
+    }
+  });
+
 });
 
   (function () {
