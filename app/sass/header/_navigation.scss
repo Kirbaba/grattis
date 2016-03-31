@@ -283,11 +283,27 @@ ul.dropdown-menu.navigation--dropped {
 			        transform: translateX(-50%);
 		}
 }
+
+ li.dropdown-cust .navigation--dropped {
+	-webkit-transform: translateY(-100%);
+	   -moz-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	     -o-transform: translateY(-100%);
+	        transform: translateY(-100%);}
+
+ li.dropdown-cust.open .navigation--dropped  {
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	     -o-transform: translateY(0);
+	        transform: translateY(0);
+}
 li.dropdown-cust {
 	position: relative;
 	
 }
 li.dropdown-cust.open {
+	
 	a.active {
 		position: relative;
 		&:after {
