@@ -23,6 +23,16 @@
 		display: block;
 		color: #FFF;
 	}
+	.navigation--dropped span.container li {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+	li.dropdown-cust.open .dropdown-menu .divider-vert {
+		height: 1px;
+		width: 100%;
+		margin: 0;
+	}
 	li.dropdown-cust.open a {
 		color: #FFF;
 		&:after {

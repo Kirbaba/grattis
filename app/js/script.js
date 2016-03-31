@@ -50,8 +50,10 @@ if (jQuery('#chart').length > 0) {
 
 
   $('.dropdown-menu a').click(function() {
-     console.log($(this).attr('data-value'));
     $(this).closest('.dropdown').find('span.sreamnumber').text($(this).attr('data-value'));
+  });
+  $('.dropdown-menu a').click(function() {
+    $(this).closest('.btn-group').find('span.sreamnumber').text($(this).attr('data-value'));
   });
 
   $('.remove-btn').click(function(){
