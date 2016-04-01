@@ -278,5 +278,11 @@ h4.chart--all {
 	h4 {
 		font-size: 16px;
 	}
+	&--nodata {
+		@extend .empty--message;
+		p {
+			color: #333;
+		}
+	}
 }
 
