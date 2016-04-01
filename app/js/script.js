@@ -63,7 +63,15 @@ if (jQuery('#chart').length > 0) {
 
   $("#checkAll").change(function () {
     $("input:checkbox").prop('checked', $(this).prop("checked"));
+     var checked_count = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (checked_count < 2) {
+        $('.mass_actions').hide();
+    } else {
+      $('.mass_actions').css("display","inline-block");
+    }
   });
+
+  
 
   if ($('.dropdown-cust').hasClass('open') ){
       $('.wrapper').css('margin-top', '40px');
@@ -141,6 +149,18 @@ function setMinutesAndSeconds(seconds) {
             'wrapAround': true
          });
   })(jQuery);
+
+
+$('.table--check').change(function () {
+    var checked_count = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (checked_count < 2) {
+        $('.mass_actions').hide();
+    } else {
+      $('.mass_actions').css("display","inline-block");
+    }
+    console.log(checked_count);
+});
+  
    
 
 

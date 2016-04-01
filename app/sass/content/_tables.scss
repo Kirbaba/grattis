@@ -53,8 +53,12 @@ a.table--control {
 	}
 }
 
-.table--check {
+.table--check, #checkAll {
 	vertical-align: text-bottom;
 	margin-top: 0;
 	margin-right: 15px!important;
+}
+
+.new-mes {
+	color: #E00;
 }
