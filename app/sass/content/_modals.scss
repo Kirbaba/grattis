@@ -43,3 +43,14 @@
 		color: #777;
 	}
 }
+
+.getCode {
+	.modal-body {
+		text-align: center;
+		.form-control {
+			width: 110px;
+			margin: 10px auto;
+			padding-left: 15px;
+		}
+	}
+}

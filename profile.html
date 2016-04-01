@@ -108,14 +108,75 @@
                     <h3 class="page-title">
                         Профиль            
                     </h3>
-                    <!-- open .row -->
-                     <blockquote class="blockquote-magenta">
-                        <p>Необходимо привязать свой домен к потоку? Перейдите на страницу <a href="#">парковки доменов</a>.</p>
-                     </blockquote>
+                    <!-- open .row -->                    
                      <div class="row">
                         <!-- open .col-sm-12 -->
-                        <div class="col-sm-12">
-                            
+                        <div class="col-md-6">
+                            <form class="profile" role="form">
+                                <div class="form-group">
+                                    <label>Логин / имя:</label>
+                                    <input type="text" class="form-control" placeholder="Имя...">
+                                    <small> Виден на форуме и в рейтинге партнеров.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>E-mail:</label>
+                                    <input type="email" class="form-control" placeholder="example@site.ru">
+                                    <small> Ваш e-mail используется для входа в систему. Чтобы изменить его, пожалуйста, <a href="#">обратитесь в службу поддержки.</a></small>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваш основной мессенджер:</label>
+                                    <!-- open .row -->
+                                    <div class="row">
+                                        <!-- open .col-sm-3 -->
+                                        <div class="col-md-4">                                                                   
+                                                <div class="dropdown" id="drop2">
+                                                    <div id="dLabel2" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                                        <span class="sreamnumber">Telegram</span>
+                                                        <span class="pull-right">
+                                                            <span class="caret"></span>
+                                                        </span>
+                                                    </div>
+                                                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                        
+                                                        <li><a href="#" data-value="Telegram">Telegram</a></li>
+                                                        <li><a href="#" data-value="Viber">Viber</a></li>
+                                                        <li><a href="#" data-value="WhatsApp">WhatsApp</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!-- close .col-sm-3 -->
+                                        <!-- open .col-sm-9 -->
+                                        <div class="col-md-8 pl0">
+                                            <input type="tel" class="form-control" placeholder="">
+                                        </div>
+                                        <!-- close .col-sm-9 -->
+                                    </div>
+                                    <!-- close .row -->
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Ваш основной мессенджер:</label>
+                                    <!-- open .row -->
+                                    <div class="row">
+                                        <!-- open .col-sm-9 -->
+                                        <div class="col-md-8">
+                                            <input type="tel" class="form-control" placeholder="">
+                                        </div>
+                                        <!-- close .col-sm-9 -->
+                                        <!-- open .col-sm-3 -->
+                                        <div class="col-md-4 pl0">                                  
+                                            <a href="#nowhere" data-toggle="modal" data-target="#getCode" class="btn btn--cust btn-warning getCode--show">Получить код</a>
+                                        </div>
+                                        <!-- close .col-sm-3 -->                                        
+                                    </div>
+                                    <!-- close .row -->
+                                    <small> Ваш телефон никому не виден. Используется только для безопасного проведения выплат.</small>
+                                </div>
+                                <p>
+                                    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                                </p>
+                            </form>
                         </div>
                         <!-- close .col-sm-12 -->
                     </div>
@@ -188,7 +249,25 @@
 </main>
 <!-- close .main -->
 
-
+<div class="modal fade getCode" id="getCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close js-modal--close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Подтвердите ваш номер телефона</h4>
+            </div>
+            <div class="modal-body">
+                <p>Мы отправили СМС с кодом подтверждения на номер +44 06623432123.</p>
+                <input type="text" class="form-control" placeholder="Ваш код">
+                <small>Не пришло СМС? <a href="#" data-toggle="modal" data-target="#getCode" >Получить код повторно</a> (<span class="getCode--counter" id="getCode--counter"></span>)</small>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default js-modal--close" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary">Подтвердить</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 </body>
     <!-- <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script> -->

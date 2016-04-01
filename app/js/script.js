@@ -81,6 +81,41 @@ if (jQuery('#chart').length > 0) {
 
 });
 
+$('.getCode--show').on('click', function() {
+  console.log('start');
+ 
+    var seconds = 45;
+    var interval = setInterval(function() {
+       if ($('#getCode--counter').length) {
+          if (seconds > 0) {
+            seconds--;
+            $('.getCode--counter').text(setMinutesAndSeconds(seconds));
+          } else {
+             $('.getCode--counter').hide();
+          }
+        } else {
+          $('.getCode--counter').text('');
+          clearInterval(interval);
+        }
+      },1000);       
+  
+});
+
+$('.js-modal--close').on('click', function() {
+  $('.getCode--counter').text('');
+  $('#getCode').modal('hide');
+});
+
+
+
+function setMinutesAndSeconds(seconds) {
+  var minutes = Math.floor(seconds / 60),
+      seconds = seconds - (minutes * 60);
+  
+  seconds = (seconds > 10) ? seconds : ("0" + seconds);
+
+  return minutes + ':' + seconds;
+}
   (function () {
          lightbox.option({
             'showImageNumberLabel': false,

@@ -187,3 +187,17 @@ pre code {
 		margin-bottom: 10px;
 	}
 }
+
+.mb5 {
+	margin-bottom: 5px;
+}
+
+.pl0 {
+	padding-left: 0;
+}
+
+.nav-tabs {
+	li.active a:after {
+		content: none;
+	}
+}
