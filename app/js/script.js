@@ -81,28 +81,41 @@ if (jQuery('#chart').length > 0) {
 
 });
 
-$('.getCode--show').on('click', function() {
-  console.log('start');
- 
-    var seconds = 45;
-    var interval = setInterval(function() {
-       if ($('#getCode--counter').length) {
-          if (seconds > 0) {
-            seconds--;
-            $('.getCode--counter').text(setMinutesAndSeconds(seconds));
-          } else {
-             $('.getCode--counter').hide();
-          }
+$('.getCode--show').click(function(){
+
+    var phone_vall = $('.js__phone--input').val();
+    console.log(phone_vall);
+    $('.js__phone').text(phone_vall);
+  });
+
+$('.js-phone--confirmed').click(function () {
+   $('.js-phone').css("display", "none");
+  var phone_vall = $('.js__phone').text()
+   $('.js-phone--added .well').text(phone_vall);
+   $('.js-phone--added').css("display", "block");
+})
+
+$('.getCode--show, js-getCode--again').on('click', function() {
+  if ($('#getCode--counter').length) {
+    var seconds = 12;
+    window.setId = setInterval(function() {
+      if (seconds > 0) {
+          seconds--;
+          $('.getCode--counter').text(setMinutesAndSeconds(seconds));
         } else {
-          $('.getCode--counter').text('');
-          clearInterval(interval);
+           $('.getCode--counter').hide();
+            $(".js-getCode--again").attr("href", "#nowhere");
         }
       },1000);       
-  
+  }
+  console.log(window.setId);
 });
 
-$('.js-modal--close').on('click', function() {
-  $('.getCode--counter').text('');
+
+
+$('.js-modal--close').on('click', function() {  
+  clearInterval(window.setId);
+  $('.getCode--counter').text('0:45'); 
   $('#getCode').modal('hide');
 });
 
@@ -110,12 +123,11 @@ $('.js-modal--close').on('click', function() {
 
 function setMinutesAndSeconds(seconds) {
   var minutes = Math.floor(seconds / 60),
-      seconds = seconds - (minutes * 60);
-  
-  seconds = (seconds > 10) ? seconds : ("0" + seconds);
-
+      seconds = seconds - (minutes * 60);  
+  seconds = (seconds >= 10) ? seconds : ("0" + seconds);
   return minutes + ':' + seconds;
 }
+
   (function () {
          lightbox.option({
             'showImageNumberLabel': false,

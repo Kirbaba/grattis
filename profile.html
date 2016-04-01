@@ -121,7 +121,12 @@
 
                                 <div class="form-group">
                                     <label>E-mail:</label>
-                                    <input type="email" class="form-control" placeholder="example@site.ru">
+                                    <!-- open .well well-long -->
+                                    <div class="well well-sm well-long">
+                                        maksutine@mail.maksutinius.xxx
+                                    </div>
+                                    <!-- close .well well-long -->
+                                    
                                     <small> Ваш e-mail используется для входа в систему. Чтобы изменить его, пожалуйста, <a href="#">обратитесь в службу поддержки.</a></small>
                                 </div>
                                 <div class="form-group">
@@ -156,22 +161,48 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Ваш основной мессенджер:</label>
+                                    <label>Мобильный телефон:</label>
                                     <!-- open .row -->
                                     <div class="row">
-                                        <!-- open .col-sm-9 -->
-                                        <div class="col-md-8">
-                                            <input type="tel" class="form-control" placeholder="">
+                                        <!-- open .js-phone -->
+                                        <div class="js-phone">
+                                             <!-- open .col-sm-9 -->
+                                            <div class="col-md-8">
+                                                <input type="tel" class="form-control js__phone--input" placeholder="">
+                                            </div>
+                                            <!-- close .col-sm-9 -->
+                                            <!-- open .col-sm-3 -->
+                                            <div class="col-md-4 pl0">                                  
+                                                <a href="#nowhere" data-toggle="modal" data-target="#getCode" class="btn btn--cust btn-warning getCode--show">Получить код</a>
+                                            </div>
+                                            <!-- close .col-sm-3 --> 
+                                            <!-- open .col-sm-12 -->
+                                             <div class="col-sm-12">
+                                                 <small> Ваш телефон никому не виден. Используется только для безопасного проведения выплат.</small> 
+                                             </div>
+                                             <!-- close .col-sm-12 --> 
+                                                
                                         </div>
-                                        <!-- close .col-sm-9 -->
-                                        <!-- open .col-sm-3 -->
-                                        <div class="col-md-4 pl0">                                  
-                                            <a href="#nowhere" data-toggle="modal" data-target="#getCode" class="btn btn--cust btn-warning getCode--show">Получить код</a>
+                                        <!-- close .js-phone -->
+
+                                        <!-- open .js-phone--added -->
+                                        <div class="js-phone--added">
+                                            <!-- open .col-sm-12 -->
+                                            <div class="col-sm-12">
+                                                <div class="well well-sm well-long">
+                                                    
+                                                </div>
+                                                <small> Ваш телефон никому не виден. Используется только для безопасного проведения выплат. <br />
+                                                Чтобы изменить его, пожалуйста, <a href="#">обратитесь в службу поддержки.</a>
+                                                </small>
+                                            </div>
+                                            <!-- close .col-sm-12 -->
                                         </div>
-                                        <!-- close .col-sm-3 -->                                        
+                                        <!-- close .js-phone--added -->
+                                                                            
                                     </div>
                                     <!-- close .row -->
-                                    <small> Ваш телефон никому не виден. Используется только для безопасного проведения выплат.</small>
+                                    
                                 </div>
                                 <p>
                                     <button type="submit" class="btn btn-primary">Сохранить изменения</button>
@@ -257,13 +288,13 @@
                 <h4 class="modal-title">Подтвердите ваш номер телефона</h4>
             </div>
             <div class="modal-body">
-                <p>Мы отправили СМС с кодом подтверждения на номер +44 06623432123.</p>
+                <p>Мы отправили СМС с кодом подтверждения на номер <span class="js__phone"></span>.</p>
                 <input type="text" class="form-control" placeholder="Ваш код">
-                <small>Не пришло СМС? <a href="#" data-toggle="modal" data-target="#getCode" >Получить код повторно</a> (<span class="getCode--counter" id="getCode--counter"></span>)</small>
+                <small>Не пришло СМС? <a class="js-getCode--again">Получить код повторно</a> <span class="getCode--counter" id="getCode--counter">0:45</span></small>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default js-modal--close" data-dismiss="modal">Отмена</button>
-                <button type="button" class="btn btn-primary">Подтвердить</button>
+                <button type="button" class="btn btn-primary js-phone--confirmed" data-dismiss="modal">Подтвердить</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

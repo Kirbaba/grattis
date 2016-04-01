@@ -201,3 +201,17 @@ pre code {
 		content: none;
 	}
 }
+
+a {
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+a:not([href]) {
+    color: #777;
+    text-decoration: none;
+    @include link {
+    	text-decoration: none;
+    	color: #777;
+    }
+}
