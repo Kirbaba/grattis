@@ -97,7 +97,7 @@ $('.js-phone--confirmed').click(function () {
 
 $('.getCode--show, js-getCode--again').on('click', function() {
   if ($('#getCode--counter').length) {
-    var seconds = 12;
+    var seconds = 45;
     window.setId = setInterval(function() {
       if (seconds > 0) {
           seconds--;

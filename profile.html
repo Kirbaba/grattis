@@ -220,13 +220,28 @@
                         Пароль            
                     </h3>
                     <!-- open .row -->
-                     <blockquote class="blockquote-magenta">
-                        <p>Выберите необходимый вам лендинг для получения персональной ссылки, нажав "Создать поток". Вы можете сгенерировать неограниченное количество потоков.</p>
-                     </blockquote>
+                    
                      <div class="row">
                         <!-- open .col-sm-12 -->
-                        <div class="col-sm-12">
-                            
+                        <div class="col-md-6">
+                            <form role="form" class="profile">
+                                 <div class="form-group">
+                                    <label>Текущий пароль:</label>
+                                    <input type="password" class="form-control" placeholder="">
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+                                 <div class="form-group">
+                                    <label>Новый пароль:</label>
+                                    <input type="password" class="form-control" placeholder="">
+                                </div>
+                                 <div class="form-group">
+                                    <label>Повторите пароль:</label>
+                                    <input type="password" class="form-control" placeholder="">
+                                </div>
+                                 <p>
+                                    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                                </p>
+                            </form>                            
                         </div>
                         <!-- close .col-sm-12 -->
                     </div>
@@ -239,13 +254,54 @@
                         Платежные данные           
                     </h3>
                     <!-- open .row -->
-                     <blockquote class="blockquote-magenta">
-                        <p>3</p>
-                     </blockquote>
                      <div class="row">
                         <!-- open .col-sm-12 -->
-                        <div class="col-sm-12">
-                            
+                        <div class="col-md-6">
+                            <form role="form" class="profile">
+                                 <div class="form-group">
+                                    <label>Способ выплат:</label>
+                                    <div class="dropdown" id="drop2">
+                                        <div id="dLabel2" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                            <span class="sreamnumber">Webmoney</span>
+                                            <span class="pull-right">
+                                                <span class="caret"></span>
+                                            </span>
+                                        </div>
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                            <li><a href="#" data-value="Webmoney">Webmoney</a></li>
+                                            <li><a href="#" data-value="YandexMoney">YandexMoney</a></li>
+                                            <li><a href="#" data-value="QIWI">QIWI</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label>Номер WMR-кошелька:</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label>ФИО:</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваше вознаграждение:</label>
+                                    <!-- open .well well-sm well-long -->
+                                    <div class="well well-sm well-long">
+                                        70%
+                                    </div>
+                                    <!-- close .well well-sm well-long -->
+                                </div>
+                                <div class="form-group">
+                                    <label>Минимальная сумма выплат:</label>
+                                    <!-- open .well well-sm well-long -->
+                                    <div class="well well-sm well-long">
+                                        15 руб.
+                                    </div>
+                                    <!-- close .well well-sm well-long -->
+                                </div>
+                                 <p>
+                                    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                                </p>
+                            </form>                            
                         </div>
                         <!-- close .col-sm-12 -->
                     </div>
@@ -261,12 +317,38 @@
                     
                      <div class="row">
                         <!-- open .col-sm-12 -->
-                        <div class="col-sm-12">
-                            
+                        <div class="col-md-6">
+                            <form role="form" class="profile">
+                                <div class="form-group">
+                                    <h4><b>E-mail уведомления и рассылки</b></h4>
+                                    <div class="checkbox">                                       
+                                        <label>
+                                            <input type="checkbox"> Новостные рассылки
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Новые тикеты и ответы на мои тикеты
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <h4><b>SMS уведомления</b></h4>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Новые тикеты и ответы на мои тикеты
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                 <p>
+                                    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                                </p>
+                            </form>                            
                         </div>
                         <!-- close .col-sm-12 -->
                     </div>
-                    <!-- close .row -->                 
+                    <!-- close .row -->                         
                 </div>              
 
             </div>
