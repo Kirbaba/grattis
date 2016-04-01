@@ -299,7 +299,7 @@
                                     <!-- close .well well-sm well-long -->
                                 </div>
                                  <p>
-                                    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                                    <a href="#" class="btn btn-primary js-profile--pyment" data-toggle="modal" data-target="#getCode">Сохранить изменения</a>
                                 </p>
                             </form>                            
                         </div>
@@ -367,12 +367,12 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close js-modal--close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Подтвердите ваш номер телефона</h4>
+                <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
                 <p>Мы отправили СМС с кодом подтверждения на номер <span class="js__phone"></span>.</p>
                 <input type="text" class="form-control" placeholder="Ваш код">
-                <small>Не пришло СМС? <a class="js-getCode--again">Получить код повторно</a> <span class="getCode--counter" id="getCode--counter">0:45</span></small>
+                <small>Не пришло СМС? <a class="js-getCode--again">Получить код повторно</a> <span class="getCode--counter" >0:45</span></small>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default js-modal--close" data-dismiss="modal">Отмена</button>
@@ -381,6 +381,8 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+
 
 </body>
     <!-- <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script> -->

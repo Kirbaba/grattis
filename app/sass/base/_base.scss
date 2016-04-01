@@ -205,6 +205,7 @@ pre code {
 a {
     text-decoration: none;
     vertical-align: baseline;
+    color: #428bca;
 }
 
 a:not([href]) {
@@ -214,4 +215,10 @@ a:not([href]) {
     	text-decoration: none;
     	color: #777;
     }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357fbd;
 }

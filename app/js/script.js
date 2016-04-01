@@ -82,7 +82,14 @@ if (jQuery('#chart').length > 0) {
 });
 
 $('.getCode--show').click(function(){
+    $('.modal-title').text('Подтвердите ваш номер телефона');
+    var phone_vall = $('.js__phone--input').val();
+    console.log(phone_vall);
+    $('.js__phone').text(phone_vall);
+  });
 
+$('.js-profile--pyment').click(function(){
+    $('.modal-title').text('Подтвердите изменение WMR-кошелька');
     var phone_vall = $('.js__phone--input').val();
     console.log(phone_vall);
     $('.js__phone').text(phone_vall);
@@ -95,8 +102,8 @@ $('.js-phone--confirmed').click(function () {
    $('.js-phone--added').css("display", "block");
 })
 
-$('.getCode--show, js-getCode--again').on('click', function() {
-  if ($('#getCode--counter').length) {
+$('.getCode--show, js-getCode--again, .js-profile--pyment').on('click', function() {
+  if ($('.getCode--counter').length) {
     var seconds = 45;
     window.setId = setInterval(function() {
       if (seconds > 0) {
