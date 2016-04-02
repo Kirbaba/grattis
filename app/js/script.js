@@ -18,8 +18,9 @@ if (jQuery('#chart').length > 0) {
   Chart.defaults.Line.scaleGridLineColor       = '#dfdfdf';
   Chart.defaults.Line.scaleLineColor           = '#dfdfdf';
 
-  var chart    = document.getElementById('chart').getContext('2d'),
-      gradient = chart.createLinearGradient(0, 0, 0, 450);
+  var chart    = document.getElementById('chart').getContext('2d'),  
+  gradient = chart.createLinearGradient(0, 0, 0, 450);
+  chart.canvas.height = 80;
 
   var data  = {
       labels: [ '', '10.02', '11.02', '12.02', '13.02', '14.02', '15.02', '16.02', '17.02', '18.02', '19.02' ],
@@ -85,6 +86,20 @@ if (jQuery('#chart').length > 0) {
     } else {
       $('.wrapper').css('margin-top', '40px');
     }
+  });
+
+  $(function () {
+      $('.footable').footable({
+        breakpoints: {
+            tiny: 100,
+            medium: 555,
+            big: 2048
+        }
+      });
+  });
+
+  $('table').bind('footable_breakpoint', function() {
+      $('table').trigger('footable_expand_first_row');
   });
 
 });
@@ -160,7 +175,8 @@ $('.table--check').change(function () {
     }
     console.log(checked_count);
 });
-  
+
+
    
 
 
