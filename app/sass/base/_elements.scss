@@ -9,3 +9,14 @@
 		}
 	}
 }
+
+.dropdown {
+	a.form-control {
+		text-decoration: none;
+		color: #555;
+		@include link {
+			text-decoration: none;
+			color: #555;
+		}
+	}
+}
