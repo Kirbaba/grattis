@@ -62,3 +62,16 @@ a.table--control {
 .new-mes {
 	color: #E00;
 }
+
+.stat {
+	&__head {
+		display: block;
+		float: left;
+		position: relative;
+	}
+
+}
+
+.toggle-row {
+	margin: 0;
+}

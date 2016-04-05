@@ -78,6 +78,7 @@
 		}
 		
 	}
+	
 }
 .dropdown .form-control {
 	height: 34px;
@@ -112,4 +113,15 @@
 	&:last-of-type {
 		border-bottom: none;
 	}
+}
+
+.forum--form--element {
+	margin: 10px 0;
+}
+
+form {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
 }

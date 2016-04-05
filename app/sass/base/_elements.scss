@@ -1,3 +1,11 @@
 .js-phone--added {
 	display: none;
 }
+
+.icon-question {
+	@include link {
+		i {
+			color: darken(#999, 10%);
+		}
+	}
+}
