@@ -15,10 +15,15 @@
 	.pl0 {
 		padding-left: 15px;	
 	}
+	.home-banner--start {
+		padding: 25px 50px;
+	}
 }
 
 @media only screen and (max-width: 770px) {
-	
+	.home-description__item {
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 736px) {
@@ -73,6 +78,36 @@
 	    margin: 15px 0;
 	    width: 100%;
 	}
+
+	.home-navigation--header .navbar-brand {
+		font-size: 24px;
+		img {
+			vertical-align: middle;
+			margin-top: 0;
+		}
+		
+	}
+	.home-navigation--header ul li {
+		margin-left: 0;
+	}
+	.home-navigation__list {
+    	margin: 9px -15px 9px 0;
+    }
+    .home-banner h2 {
+    	font-size: 24px;
+    }
+    .home-banner h5,.home-description h5 {
+    	font-size: 16px;
+    }
+    .home-banner--start {
+    	padding: 15px 40px;
+    }
+    .home-description h3 {
+    	font-size: 26px;
+    }
+    .home-footer p{
+    	font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
