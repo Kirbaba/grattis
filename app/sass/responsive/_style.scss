@@ -18,6 +18,9 @@
 	.home-banner--start {
 		padding: 25px 50px;
 	}
+	.enter-form--btn {
+		padding: 0;
+	}
 }
 
 @media only screen and (max-width: 770px) {
@@ -108,6 +111,10 @@
     .home-footer p{
     	font-size: 12px;
     }
+
+    .enter-form--btn {
+		padding: 0;
+	}
 }
 
 @media only screen and (max-width: 500px) {

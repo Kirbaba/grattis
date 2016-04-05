@@ -102,6 +102,30 @@ if (jQuery('#chart').length > 0) {
       $('table').trigger('footable_expand_first_row');
   });
 
+  $('input').keypress(function(e) {
+  var is_shift_pressed = false;
+  if (e.shiftKey) {
+    is_shift_pressed = e.shiftKey;
+  } 
+  else if (e.modifiers) {
+    is_shift_pressed = !!(e.modifiers & 4);
+  }
+  if (((e.which >= 65 && e.which <=  90) && !is_shift_pressed) || ((e.which >= 97 && e.which <= 122) && is_shift_pressed)) {
+    $("#capswarn").show();    
+  }
+  else {
+    $("#capswarn").hide();  
+  }
+
+ });
+
+  $("#enter-password").focus(function(){
+      $(".enter-form--help").show()
+  });
+  $("#enter-password").focusout(function(){
+      $(".enter-form--help").hide()
+  });
+
 });
 
 $('.getCode--show').click(function(){
@@ -176,7 +200,15 @@ $('.table--check').change(function () {
     console.log(checked_count);
 });
 
-
+$( "#showPass" )
+  .click(function() {
+    if ($("#enter-password").attr('type') == 'password') {
+      console.log('true');
+      $("#enter-password").attr('type','text');
+    } else {
+      $("#enter-password").attr('type','password');
+    }    
+  });
    
 
 
