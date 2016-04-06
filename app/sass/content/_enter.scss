@@ -47,6 +47,13 @@ h2.enter-title {
 	color: #5C5C5C;
 	margin-bottom: 30px;  
 }
+p {
+	text-align: center;
+	font-size: 16px;
+	text-align: center;
+	color: #5D5D5D;
+	font-family: $os;
+}
 
 .enter-form {
 	display: block;
@@ -107,6 +114,17 @@ h2.enter-title {
 		text-align: center;
 		text-transform: none;
 		margin: 5px;
+		&--white {
+			@extend .home-navigation--enter;
+			display: inline-block;
+			width: 100%;
+			height: 45px;
+			line-height: 45px;
+			padding: 0;
+			text-align: center;
+			text-transform: none;
+			margin: 5px;
+		}
 	}
 	
 	.form-group {
@@ -141,4 +159,31 @@ h2.enter-title {
 	width: 100%;
 	font-family: $os;
 	font-size: 16px;
+}
+
+.showPass--enter {
+	display: none;
+	top: 50%!important;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.enter-form .form-group  {
+	position: relative;
+}
+
+.enter-form--help--reg {
+	top: -100%;
+	-webkit-transform: translateY(60%);
+	   -moz-transform: translateY(60%);
+	    -ms-transform: translateY(60%);
+	     -o-transform: translateY(60%);
+	        transform: translateY(60%);
+}
+
+.reg--text {
+	font-size: 14px!important;
 }

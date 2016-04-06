@@ -27,6 +27,32 @@
 	.home-description__item {
 		text-align: center;
 	}
+	.enter-form--help {
+		left: 50%;
+		top: 100%;
+		-webkit-transform: translate(-50%,-100%);
+		   -moz-transform: translate(-50%,-100%);
+		    -ms-transform: translate(-50%,-100%);
+		     -o-transform: translate(-50%,-100%);
+		        transform: translate(-50%,-100%);
+		margin-left: 0;
+		margin-top: 10px;
+		&:before {
+			top: -5px;
+			left: 50%;
+			
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			border-bottom: 8px solid #EFEFEF;
+			border-top: none;
+			-webkit-transform: translate(-50%,0);
+			   -moz-transform: translate(-50%,0);
+			    -ms-transform: translate(-50%,0);
+	    		 -o-transform: translate(-50%,0);
+			        transform: translate(-50%,0);
+		}
+		
+	}
 }
 
 @media only screen and (max-width: 736px) {

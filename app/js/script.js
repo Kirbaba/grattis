@@ -126,6 +126,13 @@ if (jQuery('#chart').length > 0) {
       $(".enter-form--help").hide()
   });
 
+  $("#enter-password").focus(function(){
+      $(".showPass--enter").show()
+  });
+  $("#enter-password").focusout(function(){
+      $(".showPass--enter").hide()
+  });
+
 });
 
 $('.getCode--show').click(function(){
