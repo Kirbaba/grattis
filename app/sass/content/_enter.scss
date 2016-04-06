@@ -114,6 +114,8 @@ p {
 		text-align: center;
 		text-transform: none;
 		margin: 5px;
+		border: none;
+		outline: none;
 		&--white {
 			@extend .home-navigation--enter;
 			display: inline-block;
@@ -131,6 +133,9 @@ p {
 		input.form-control {
 			padding-top: 25px;
 			padding-bottom: 25px;
+			&[required]:valid{
+				border-color: #49874A;
+			}
 		}
 		label {
 			padding-left: 15px;
@@ -185,5 +190,5 @@ p {
 }
 
 .reg--text {
-	font-size: 14px!important;
+	font-size: 15px!important;
 }

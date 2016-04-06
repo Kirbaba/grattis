@@ -132,6 +132,20 @@ if (jQuery('#chart').length > 0) {
   $("#enter-password").focusout(function(){
       $(".showPass--enter").hide()
   });
+/*  $("#reg--email").focusout(function(){
+      $(".showPass--enter").hide()
+  });*/
+  $("#reg--email").validate(
+      {
+        rules: 
+        {
+          email: 
+          {
+            required: true,
+            email: true
+          }
+        }
+      });
 
 });
 
