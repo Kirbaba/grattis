@@ -133,6 +133,18 @@ if (jQuery('#chart').length > 0) {
   $("#enter-password").focusout(function(){
       $(".showPass--enter").hide()
   });
+  $("#enter-password").focus(function(){
+      $(".dropped-lable").css({
+        transform: 'translateY(0)',
+        opacity: 1
+      })
+  });
+  $("#enter-password").focusout(function(){
+       $(".dropped-lable").css({
+        transform: 'translateY(100%)',
+        opacity: 0
+      })
+  });
 });
 
 $('.getCode--show').click(function(){
