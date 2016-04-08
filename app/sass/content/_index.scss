@@ -63,11 +63,18 @@
 	background-color: #fff;
 	&--tabs {
 		padding-top: 0;
+		overflow: hidden;
 		.tab-content {
 			padding-top: 30px;
 		}
 		blockquote {
     		padding: 10px 5px 10px 20px;
+    		p {
+    			text-align: left;
+    		}
+    	}
+    	.nav-tabs {
+    		border-bottom: none;
     	}
 	}
 	h4 {

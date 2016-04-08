@@ -20,3 +20,51 @@
 		}
 	}
 }
+
+.preloader {
+	margin-right: 5px;
+	&_line {
+		fill: #ffdd2e;
+	}
+}
+
+.message_code {
+	display: block;
+	float: left;
+	width: 100%;
+	span {
+		display: block;
+		float: left;
+		position: relative;
+		background: #ffdd2e;
+		color: black;
+		float: left;
+		clear:both;
+		border-bottom-left-radius: 30px 0px\9;
+		border-radius: 20px 20px 20px 20px;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		font-size: 46px;
+		color: #292929;
+		position: relative;
+		&:before {
+			content: "";
+			border-radius: 50% 50% 50% 50%;
+			border-style: solid;
+			border-width: 0 0 0 14px;
+			bottom: 0;
+			clip: rect(20px, 35px, 42px, 0px);
+			content: " ";
+			height: 40px;
+			position: absolute;
+			right: -50px;
+			width: 45px;
+			z-index: 0;
+			border-color: #ffdd2e;
+			left: -30px;
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
+}

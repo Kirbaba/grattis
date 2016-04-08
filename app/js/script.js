@@ -111,6 +111,7 @@ if (jQuery('#chart').length > 0) {
     is_shift_pressed = !!(e.modifiers & 4);
   }
   if (((e.which >= 65 && e.which <=  90) && !is_shift_pressed) || ((e.which >= 97 && e.which <= 122) && is_shift_pressed)) {
+    $('#enter-password').focus();
     $("#capswarn").show();    
   }
   else {
@@ -132,21 +133,6 @@ if (jQuery('#chart').length > 0) {
   $("#enter-password").focusout(function(){
       $(".showPass--enter").hide()
   });
-/*  $("#reg--email").focusout(function(){
-      $(".showPass--enter").hide()
-  });*/
-  $("#reg--email").validate(
-      {
-        rules: 
-        {
-          email: 
-          {
-            required: true,
-            email: true
-          }
-        }
-      });
-
 });
 
 $('.getCode--show').click(function(){
