@@ -138,6 +138,87 @@
 			}
 		}		
 	}
+	&--list {
+		padding: 0;
+		list-style-type: disc;
+		font-size: 14px;
+		color: #292929;
+		p {
+			text-align: left;
+		}
+		li {
+			margin: 0 15px;
+			a {
+				color: #1D77EF;
+			}
+		}
+	}
+	&--controls {
+		text-align: center;
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		padding-right: 10%;
+		width: 100%;
+		float: left;
+		vertical-align: middle;
+	}
+	&--back {
+		display: inline-block;
+		font-size: 16px;
+		color: #525252;
+		margin: 0 10px;
+		@include link {
+			text-decoration: none;
+			color: #292929;
+		}
+	}
+	&--gotopay {
+		display: inline-block;
+		font-size: 16px;
+		color: #292929;
+		padding: 15px 25px;
+		margin: 0 15px;
+		border: 1px solid #ffdd2d;
+		@include border-radius(20px);
+		@include background-clip(padding-box);
+		background-color: #ffdd2d;
+		@include box-shadow(0 1px 1px #b79d1b, inset 0 1px 0 #fff9db);
+		@include transition(.3s);
+		position: relative;
+		@include link {
+			text-decoration: none;
+			background-color: darken(#FFDD2D,15%);
+			color: #292929;
+		}
+
+	}
+	&--guarantees {
+		padding: 0;
+		margin: 10px 0;
+		display: block;
+		float: left;
+		width: 100%;
+		p {
+			text-align: center;
+			display: block;
+			float: left;
+			width: 100%;
+			margin: 0;
+		}
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			padding-left: 15px;
+			background-image: url('../img/Check.png');
+			background-position: 0 50%;
+			background-repeat: no-repeat;
+			font-size: 12px;
+			color: #292929;
+		}
+	}
 	&--contacts {
 		display: block;
 		float: left;

@@ -88,7 +88,8 @@
 <main class="main">
     <!-- open .container -->
     <div class="container">
-       <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target=".modal__payment">Оплатить</a>
+       <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#modal__payment">Оплатить</a>
+       <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#modal__payment--verify">Подтверждение</a>
     </div>
     <!-- close .container -->
 </main>
@@ -174,6 +175,113 @@
                         <!-- close .tab-pane -->
                         <!-- open .tab-pane -->
                         <div class="tab-pane" id="e-money">
+                            you
+                        </div>
+                        <!-- close .tab-pane -->
+                    </div>
+                    <!-- close .tab-content -->   
+                </div>                
+            </div>
+            <!-- close .col-md-12 -->
+           
+        </div>
+        <!-- close .modal__payment--content -->
+            
+           
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade bs-example-modal-lg modal__payment" id="modal__payment--verify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <!-- open .modal__payment--sidebar -->
+        <div class="modal__payment--sidebar">
+            <ul class="nav nav-pills">
+                <li class="active"><a href=".tab-mobile" data-toggle="pill">Через мобильный телефон</a></li>
+                <li><a href=".tab-banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
+                <li><a href=".tab-e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
+
+            </ul>
+        </div>
+        <!-- close .modal__payment--sidebar -->
+        <!-- open .modal__payment--content -->
+        <div class="modal__payment--content">
+            <!-- open .col-md-12 -->
+            <div class="col-md-12">
+                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
+                    <h2 class="modal-title">Подтверждение заказа №12431234  </h2>
+                </div>
+                <!-- open .modal__payment--content__data -->
+                <div class="modal__payment--content_data">
+                    <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
+                    <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
+                    <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
+                </div>
+                <!-- close .modal__payment--content__data -->
+
+                 <div class="modal-body">
+                    <!-- open .tab-content -->
+                    <div class="tab-content">
+                        <!-- open .tab-pane -->
+                        <div class="tab-pane active tab-mobile" id="mobile">
+                           
+                            <h4>Ваш номер: +7 (905) 994-99-91</h4>
+                            <!-- open .modal__pyment--list -->
+                            <ul class="modal__payment--list">
+                                <p><b>Внимание, особенности оператора Билайн:</b></p>
+                                <li>После списания суммы покупки на Вашем счете должно остаться <b>не менее 50 рублей.</b></li>
+                                <li>После нажатия на кнопку “Перейти к оплате”, мы отправим вам СМС, на которую нужно ответить, следуя инструкциям в смс.
+• Услуга доступна только для абонентов-физических лиц сети Билайн.</li>
+                                <li>Услуга доступна для абонентов тарифных планов любой системы расчетов, кроме линейки тарифов "Простая логика",   "Правильны", а также абонентов, у которых подключены услуги "Безлимит внутри сети" или "Безумные дни".</li>
+                                <li>Услуга становится доступной с момента расходования Вами 15 рублей за услуги связи с момента подключения к сети  "Билайн".</li>
+                                <li>Совершая покупки с помощью услуги "Мобильная коммерция", Вы соглашаетесь с условиями ее предоставления.</li>
+                                <li> Пожалуйста, ознакомьтесь с ними заранее - <a href="#">Договор-оферта ЗАО "Национальная сервисная компания"</a></li>
+                            </ul>
+                            <!-- close .modal__pyment--list -->
+                            <!-- open .modal__pyment--controls -->
+                            <div class="modal__payment--controls">
+                                <a href="#" class="modal__payment--back">Назад</a>
+                                <a href="#" class="modal__payment--gotopay">Перейти к оплате</a>
+                            </div>
+                            <!-- close .modal__pyment--controls -->
+
+                            <!-- open .modal__payment--guarantees -->
+                            <ul class="modal__payment--guarantees">
+                                <p><b>Наши гарантии </b></p>
+                                <li>100% гарантия доставки</li>
+                                <li>Конфиденциальность</li>
+                                <li>Безопасный платеж</li>
+                                <li>Круглосуточная поддержка</li>
+                            </ul>
+                            <!-- close .modal__payment--guarantees -->
+                            
+
+                            <!-- open .modal__payment--contacts -->
+                            <div class="modal__payment--contacts">
+                                <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
+                                <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
+                                <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
+                            </div>
+                            <!-- close .modal__payment--contacts -->    
+                            <!-- open .modal__payment--refs -->
+                            <div class="modal__payment--refs">
+                                <small>
+                                    Стоимость услуги: МегаФон = 200 рублей. МТС = 203.2 рубля. Билайн = 200 рублей. Другие операторы ≈ 198.46 рублей.
+                                    Цены указаны с учетом НДС. Для абонентов МТС: С размером Стоимости услуги и порядком ее списания можно ознакомиться на Сайте Оператора www.mts.ru в разделе «Услуги по коротким номерам», введя короткий номер в строке поиска, а также позвонив по единому номеру 88002500890. Контент предоставляется компанией SMS Online. Контакты службы технической поддержки: сайт http://smshelp.me, тел.: 8-800-555-12-00, адрес электронной почты to@sms-online.com. Пользователь подтверждает согласие на получение информационных сообщений об услуге.
+                                </small>
+                            </div>
+                            <!-- close .modal__payment--refs -->
+                        </div>
+                        <!-- close .tab-pane -->
+                        <!-- open .tab-pane -->
+                        <div class="tab-pane tab-banks" id="banks">
+                            hey
+                        </div>
+                        <!-- close .tab-pane -->
+                        <!-- open .tab-pane -->
+                        <div class="tab-pane tab-e-money" id="e-money">
                             you
                         </div>
                         <!-- close .tab-pane -->
