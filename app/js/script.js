@@ -184,6 +184,19 @@ $('.getCode--show, js-getCode--again, .js-profile--pyment').on('click', function
   console.log(window.setId);
 });
 
+$('.js-show_payment-timer').on('click', function() {
+  if ($('.js__payment-count').length) {
+    var seconds = 99;
+    window.setId = setInterval(function() {
+      if (seconds > 0) {
+          seconds--;
+          $('.js__payment-count').text(setSeconds(seconds));
+        } 
+      },1000);       
+  }
+  console.log(window.setId);
+});
+
 
 
 $('.js-modal--close').on('click', function() {  
@@ -199,6 +212,12 @@ function setMinutesAndSeconds(seconds) {
       seconds = seconds - (minutes * 60);  
   seconds = (seconds >= 10) ? seconds : ("0" + seconds);
   return minutes + ':' + seconds;
+}
+
+function setSeconds(seconds) {
+  var seconds = seconds;  
+  seconds = (seconds >= 10) ? seconds : ("0" + seconds);
+  return  seconds;
 }
 
   (function () {
