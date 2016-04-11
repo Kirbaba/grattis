@@ -21,6 +21,10 @@
 	.enter-form--btn {
 		padding: 0;
 	}
+	.modal__payment--contacts p {
+		display: block;
+		margin-bottom: 5px;
+	}
 }
 
 @media only screen and (max-width: 770px) {
@@ -60,6 +64,10 @@
 		     -o-transform: translate(-50%, 0);
 		        transform: translate(-50%, 0);
 	}
+
+	.modal-dialog {
+    	width: 700px;
+    }
 }
 
 @media only screen and (max-width: 736px) {
@@ -148,10 +156,52 @@
     .enter-form--btn {
 		padding: 0;
 	}
+	
+
+	.modal-dialog {
+		width: auto;
+	}
+	.modal__payment--sidebar {
+		padding-top: 0;
+		width: 100%;
+	}
+	.modal__payment--content {
+		width: 100%;
+	}
+
+	.modal__payment .modal-content {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+
+	.modal__payment--content_data small {
+		display: block;
+	}
+	.message_code span {
+		font-size: 34px;
+		&:before {
+			bottom: -10px;
+		}
+	}
+	.modal__payment--contacts a {
+		margin: 10px;
+	}
+	.modal__payment--controls {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	    padding-right: 0;
+	}
+	.modal__payment--controls a {
+		margin: 10px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	
+	.message_code span {
+		font-size: 24px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
