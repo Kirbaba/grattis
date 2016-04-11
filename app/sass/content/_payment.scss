@@ -201,6 +201,7 @@
 		display: block;
 		float: left;
 		width: 100%;
+		text-align: center;
 		p {
 			text-align: center;
 			display: block;
@@ -263,6 +264,103 @@
 		small {
 			font-size: 9px;
 			color: #535353;
+		}
+	}
+	&--wait {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		padding-top: 90px;
+		padding-bottom: 30px;
+		text-align: center;
+		h3 {
+			text-align: center;
+			vertical-align: middle;
+			font-family: $os;
+			font-size: 20px;
+			color: #292929;
+			font-weight: 300;
+		}
+		p {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+		&--btn {
+			@extend .modal__payment--gotopay;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		small {
+			display: block;
+			font-size: 11px;
+			color: #292929;
+			margin-top: 5px;
+		}
+	}
+	&--failed {
+		padding-top: 75px;
+		&--help {
+			display: block;
+			float: left;
+			position: relative;
+			width: 100%;
+			padding: 10px 0;
+			background-color: #FFDD2E;
+			p {
+				font-size: 14px;
+				margin: 0;
+				b {
+					font-weight: 900;
+					display: block;
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	&--paid {
+		@extend .modal__payment--wait;
+		padding-top: 45px;
+	}
+	&--present {
+		display: block;
+		float: left;
+		position: relative;
+		padding: 20px 25px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		border: 2px solid #FFDD2E;
+		color: #292929;
+		h3 {
+			font-size: 28px;			
+			margin-bottom: 20px;
+			margin-top: 0;
+		}
+		p {
+			font-size: 16px;
+			text-align: left;
+		}
+		&--controls {
+			display: block;
+			float: left;
+			position: relative;
+			width: 100%;
+			span {
+				font-size: 14px;
+				display: block;
+				float: left;
+				padding: 5px 0;
+				b {
+					vertical-align: baseline;
+				}
+			}			
+		}
+		&--btn {
+			@extend .modal__payment--gotopay;
+			float: right;
+			font-size: 14px;
+			padding: 5px 20px;
 		}
 	}
 }

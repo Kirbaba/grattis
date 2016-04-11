@@ -90,54 +90,57 @@
     <div class="container">
        <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#modal__payment">Оплатить</a>
        <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#modal__payment--verify">Подтверждение</a>
+       <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#modal__payment--waiting">Ожидание</a>
+       <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#modal__payment--failed">Оплата не прошла</a>
+       <a href="#nwhere" class="btn btn-primary pull-right" role="button" data-toggle="modal" data-target="#modal__payment--paid">Оплачено</a>
     </div>
     <!-- close .container -->
 </main>
 <!-- close .main -->
 
+
+<!-- Поп-ап "Оплата" -->
 <div class="modal fade bs-example-modal-lg modal__payment" id="modal__payment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-        <!-- open .modal__payment--sidebar -->
-        <div class="modal__payment--sidebar">
-            <ul class="nav nav-pills">
-                <li class="active"><a href="#mobile" data-toggle="pill">Через мобильный телефон</a></li>
-                <li><a href="#banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
-                <li><a href="#e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
-
-            </ul>
-        </div>
-        <!-- close .modal__payment--sidebar -->
-        <!-- open .modal__payment--content -->
-        <div class="modal__payment--content">
-            <!-- open .col-md-12 -->
-            <div class="col-md-12">
-                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
-                    <h2 class="modal-title">Оплата заказа №12431234 </h2>
-                </div>
-                <!-- open .modal__payment--content__data -->
-                <div class="modal__payment--content_data">
-                    <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
-                    <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
-                    <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
-                </div>
-                <!-- close .modal__payment--content__data -->
-
-                 <div class="modal-body">
-                    <!-- open .tab-content -->
-                    <div class="tab-content">
-                        <!-- open .tab-pane -->
-                        <div class="tab-pane active" id="mobile">
-                            <ol class="modal__payment--steps">
-                                <li>
-                                    <strong>Отправьте одно СМС на номер <b>0690643443 </b>с кодом:</strong>
-                                    <!-- open .message_code -->
-                                    <div class="message_code">
-                                        <span>mxddx27312567</span>
-                                    </div>
-                                    <!-- close .message_code -->
-                                    <small>
+            <!-- open .modal__payment--sidebar -->
+            <div class="modal__payment--sidebar">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#mobile" data-toggle="pill">Через мобильный телефон</a></li>
+                    <li><a href="#banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
+                    <li><a href="#e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
+                </ul>
+            </div>
+            <!-- close .modal__payment--sidebar -->
+            <!-- open .modal__payment--content -->
+            <div class="modal__payment--content">
+                <!-- open .col-md-12 -->
+                <div class="col-md-12">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
+                        <h2 class="modal-title">Оплата заказа №12431234 </h2>
+                    </div>
+                    <!-- open .modal__payment--content__data -->
+                    <div class="modal__payment--content_data">
+                        <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
+                        <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
+                        <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
+                    </div>
+                    <!-- close .modal__payment--content__data -->
+                    <div class="modal-body">
+                        <!-- open .tab-content -->
+                        <div class="tab-content">
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane active" id="mobile">
+                                <ol class="modal__payment--steps">
+                                    <li>
+                                        <strong>Отправьте одно СМС на номер <b>0690643443 </b>с кодом:</strong>
+                                        <!-- open .message_code -->
+                                        <div class="message_code">
+                                            <span>mxddx27312567</span>
+                                        </div>
+                                        <!-- close .message_code -->
+                                        <small>
                                         <span class="preloader"/>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="#fff">
                                                 <path opacity=".25" d="M16 0a16 16 0 0 0 0 32 16 16 0 0 0 0-32m0 4a12 12 0 0 1 0 24 12 12 0 0 1 0-28"/>
@@ -146,158 +149,452 @@
                                             </svg>
                                         </span>
                                         Оплата произойдет после подтверждения. Ожидаем...
-                                    </small>
-                                </li>
-                                <li>На ваш номер поступит СМС-сообщение с инструкцией, на короткое нужно ответить цифрой 1 для подтверждения заказа услуги.</li>
-                                <li>После оплаты заказа поздравление “Кот Матроскин поздравляет Алексея!” будет доставлено вашей маме 31 декабря в 23:30 входящим звонком на +7 (920) 254-99-91.</li>
-                            </ol>
-                            <!-- open .modal__payment--contacts -->
-                            <div class="modal__payment--contacts">
-                                <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
-                                <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
-                                <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
-                            </div>
-                            <!-- close .modal__payment--contacts -->    
-                            <!-- open .modal__payment--refs -->
-                            <div class="modal__payment--refs">
-                                <small>
+                                        </small>
+                                    </li>
+                                    <li>На ваш номер поступит СМС-сообщение с инструкцией, на короткое нужно ответить цифрой 1 для подтверждения заказа услуги.</li>
+                                    <li>После оплаты заказа поздравление “Кот Матроскин поздравляет Алексея!” будет доставлено вашей маме 31 декабря в 23:30 входящим звонком на +7 (920) 254-99-91.</li>
+                                </ol>
+                                <!-- open .modal__payment--contacts -->
+                                <div class="modal__payment--contacts">
+                                    <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
+                                </div>
+                                <!-- close .modal__payment--contacts -->
+                                <!-- open .modal__payment--refs -->
+                                <div class="modal__payment--refs">
+                                    <small>
                                     Стоимость услуги: МегаФон = 200 рублей. МТС = 203.2 рубля. Билайн = 200 рублей. Другие операторы ≈ 198.46 рублей.
                                     Цены указаны с учетом НДС. Для абонентов МТС: С размером Стоимости услуги и порядком ее списания можно ознакомиться на Сайте Оператора www.mts.ru в разделе «Услуги по коротким номерам», введя короткий номер в строке поиска, а также позвонив по единому номеру 88002500890. Контент предоставляется компанией SMS Online. Контакты службы технической поддержки: сайт http://smshelp.me, тел.: 8-800-555-12-00, адрес электронной почты to@sms-online.com. Пользователь подтверждает согласие на получение информационных сообщений об услуге.
-                                </small>
+                                    </small>
+                                </div>
+                                <!-- close .modal__payment--refs -->
                             </div>
-                            <!-- close .modal__payment--refs -->
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="banks">
+                                hey
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="e-money">
+                                you
+                            </div>
+                            <!-- close .tab-pane -->
                         </div>
-                        <!-- close .tab-pane -->
-                        <!-- open .tab-pane -->
-                        <div class="tab-pane" id="banks">
-                            hey
-                        </div>
-                        <!-- close .tab-pane -->
-                        <!-- open .tab-pane -->
-                        <div class="tab-pane" id="e-money">
-                            you
-                        </div>
-                        <!-- close .tab-pane -->
+                        <!-- close .tab-content -->
                     </div>
-                    <!-- close .tab-content -->   
-                </div>                
+                </div>
+                <!-- close .col-md-12 -->
+                
             </div>
-            <!-- close .col-md-12 -->
-           
-        </div>
-        <!-- close .modal__payment--content -->
+            <!-- close .modal__payment--content -->
             
-           
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+            
+            </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
 
+
+<!-- Поп-ап "Подтверждение(Билайн)" -->
 <div class="modal fade bs-example-modal-lg modal__payment" id="modal__payment--verify" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-        <!-- open .modal__payment--sidebar -->
-        <div class="modal__payment--sidebar">
-            <ul class="nav nav-pills">
-                <li class="active"><a href=".tab-mobile" data-toggle="pill">Через мобильный телефон</a></li>
-                <li><a href=".tab-banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
-                <li><a href=".tab-e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
-
-            </ul>
-        </div>
-        <!-- close .modal__payment--sidebar -->
-        <!-- open .modal__payment--content -->
-        <div class="modal__payment--content">
-            <!-- open .col-md-12 -->
-            <div class="col-md-12">
-                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
-                    <h2 class="modal-title">Подтверждение заказа №12431234  </h2>
-                </div>
-                <!-- open .modal__payment--content__data -->
-                <div class="modal__payment--content_data">
-                    <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
-                    <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
-                    <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
-                </div>
-                <!-- close .modal__payment--content__data -->
-
-                 <div class="modal-body">
-                    <!-- open .tab-content -->
-                    <div class="tab-content">
-                        <!-- open .tab-pane -->
-                        <div class="tab-pane active tab-mobile" id="mobile">
-                           
-                            <h4>Ваш номер: +7 (905) 994-99-91</h4>
-                            <!-- open .modal__pyment--list -->
-                            <ul class="modal__payment--list">
-                                <p><b>Внимание, особенности оператора Билайн:</b></p>
-                                <li>После списания суммы покупки на Вашем счете должно остаться <b>не менее 50 рублей.</b></li>
-                                <li>После нажатия на кнопку “Перейти к оплате”, мы отправим вам СМС, на которую нужно ответить, следуя инструкциям в смс.
-• Услуга доступна только для абонентов-физических лиц сети Билайн.</li>
-                                <li>Услуга доступна для абонентов тарифных планов любой системы расчетов, кроме линейки тарифов "Простая логика",   "Правильны", а также абонентов, у которых подключены услуги "Безлимит внутри сети" или "Безумные дни".</li>
-                                <li>Услуга становится доступной с момента расходования Вами 15 рублей за услуги связи с момента подключения к сети  "Билайн".</li>
-                                <li>Совершая покупки с помощью услуги "Мобильная коммерция", Вы соглашаетесь с условиями ее предоставления.</li>
-                                <li> Пожалуйста, ознакомьтесь с ними заранее - <a href="#">Договор-оферта ЗАО "Национальная сервисная компания"</a></li>
-                            </ul>
-                            <!-- close .modal__pyment--list -->
-                            <!-- open .modal__pyment--controls -->
-                            <div class="modal__payment--controls">
-                                <a href="#" class="modal__payment--back">Назад</a>
-                                <a href="#" class="modal__payment--gotopay">Перейти к оплате</a>
-                            </div>
-                            <!-- close .modal__pyment--controls -->
-
-                            <!-- open .modal__payment--guarantees -->
-                            <ul class="modal__payment--guarantees">
-                                <p><b>Наши гарантии </b></p>
-                                <li>100% гарантия доставки</li>
-                                <li>Конфиденциальность</li>
-                                <li>Безопасный платеж</li>
-                                <li>Круглосуточная поддержка</li>
-                            </ul>
-                            <!-- close .modal__payment--guarantees -->
-                            
-
-                            <!-- open .modal__payment--contacts -->
-                            <div class="modal__payment--contacts">
-                                <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
-                                <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
-                                <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
-                            </div>
-                            <!-- close .modal__payment--contacts -->    
-                            <!-- open .modal__payment--refs -->
-                            <div class="modal__payment--refs">
-                                <small>
+            <!-- open .modal__payment--sidebar -->
+            <div class="modal__payment--sidebar">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href=".tab-mobile" data-toggle="pill">Через мобильный телефон</a></li>
+                    <li><a href=".tab-banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
+                    <li><a href=".tab-e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
+                </ul>
+            </div>
+            <!-- close .modal__payment--sidebar -->
+            <!-- open .modal__payment--content -->
+            <div class="modal__payment--content">
+                <!-- open .col-md-12 -->
+                <div class="col-md-12">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
+                        <h2 class="modal-title">Подтверждение заказа №12431234  </h2>
+                    </div>
+                    <!-- open .modal__payment--content__data -->
+                    <div class="modal__payment--content_data">
+                        <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
+                        <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
+                        <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
+                    </div>
+                    <!-- close .modal__payment--content__data -->
+                    <div class="modal-body">
+                        <!-- open .tab-content -->
+                        <div class="tab-content">
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane active tab-mobile" id="mobile">
+                                
+                                <h4>Ваш номер: +7 (905) 994-99-91</h4>
+                                <!-- open .modal__pyment--list -->
+                                <ul class="modal__payment--list">
+                                    <p><b>Внимание, особенности оператора Билайн:</b></p>
+                                    <li>После списания суммы покупки на Вашем счете должно остаться <b>не менее 50 рублей.</b></li>
+                                    <li>После нажатия на кнопку “Перейти к оплате”, мы отправим вам СМС, на которую нужно ответить, следуя инструкциям в смс.
+                                    • Услуга доступна только для абонентов-физических лиц сети Билайн.</li>
+                                    <li>Услуга доступна для абонентов тарифных планов любой системы расчетов, кроме линейки тарифов "Простая логика",   "Правильны", а также абонентов, у которых подключены услуги "Безлимит внутри сети" или "Безумные дни".</li>
+                                    <li>Услуга становится доступной с момента расходования Вами 15 рублей за услуги связи с момента подключения к сети  "Билайн".</li>
+                                    <li>Совершая покупки с помощью услуги "Мобильная коммерция", Вы соглашаетесь с условиями ее предоставления.</li>
+                                    <li> Пожалуйста, ознакомьтесь с ними заранее - <a href="#">Договор-оферта ЗАО "Национальная сервисная компания"</a></li>
+                                </ul>
+                                <!-- close .modal__pyment--list -->
+                                <!-- open .modal__pyment--controls -->
+                                <div class="modal__payment--controls">
+                                    <a href="#" class="modal__payment--back">Назад</a>
+                                    <a href="#" class="modal__payment--gotopay">Перейти к оплате</a>
+                                </div>
+                                <!-- close .modal__pyment--controls -->
+                                <!-- open .modal__payment--guarantees -->
+                                <ul class="modal__payment--guarantees">
+                                    <p><b>Наши гарантии </b></p>
+                                    <li>100% гарантия доставки</li>
+                                    <li>Конфиденциальность</li>
+                                    <li>Безопасный платеж</li>
+                                    <li>Круглосуточная поддержка</li>
+                                </ul>
+                                <!-- close .modal__payment--guarantees -->
+                                
+                                <!-- open .modal__payment--contacts -->
+                                <div class="modal__payment--contacts">
+                                    <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
+                                </div>
+                                <!-- close .modal__payment--contacts -->
+                                <!-- open .modal__payment--refs -->
+                                <div class="modal__payment--refs">
+                                    <small>
                                     Стоимость услуги: МегаФон = 200 рублей. МТС = 203.2 рубля. Билайн = 200 рублей. Другие операторы ≈ 198.46 рублей.
                                     Цены указаны с учетом НДС. Для абонентов МТС: С размером Стоимости услуги и порядком ее списания можно ознакомиться на Сайте Оператора www.mts.ru в разделе «Услуги по коротким номерам», введя короткий номер в строке поиска, а также позвонив по единому номеру 88002500890. Контент предоставляется компанией SMS Online. Контакты службы технической поддержки: сайт http://smshelp.me, тел.: 8-800-555-12-00, адрес электронной почты to@sms-online.com. Пользователь подтверждает согласие на получение информационных сообщений об услуге.
-                                </small>
+                                    </small>
+                                </div>
+                                <!-- close .modal__payment--refs -->
                             </div>
-                            <!-- close .modal__payment--refs -->
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane tab-banks" id="banks">
+                                hey
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane tab-e-money" id="e-money">
+                                you
+                            </div>
+                            <!-- close .tab-pane -->
                         </div>
-                        <!-- close .tab-pane -->
-                        <!-- open .tab-pane -->
-                        <div class="tab-pane tab-banks" id="banks">
-                            hey
-                        </div>
-                        <!-- close .tab-pane -->
-                        <!-- open .tab-pane -->
-                        <div class="tab-pane tab-e-money" id="e-money">
-                            you
-                        </div>
-                        <!-- close .tab-pane -->
+                        <!-- close .tab-content -->
                     </div>
-                    <!-- close .tab-content -->   
-                </div>                
+                </div>
+                <!-- close .col-md-12 -->
+                
             </div>
-            <!-- close .col-md-12 -->
-           
-        </div>
-        <!-- close .modal__payment--content -->
+            <!-- close .modal__payment--content -->
             
-           
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+            
+            </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+<!-- Поп-ап Ожидаем "подтверждения платежа" -->           
+<div class="modal fade bs-example-modal-lg modal__payment" id="modal__payment--waiting" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- open .modal__payment--sidebar -->
+            <div class="modal__payment--sidebar">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#mobile" data-toggle="pill">Через мобильный телефон</a></li>
+                    <li><a href="#banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
+                    <li><a href="#e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
+                </ul>
+            </div>
+            <!-- close .modal__payment--sidebar -->
+            <!-- open .modal__payment--content -->
+            <div class="modal__payment--content">
+                <!-- open .col-md-12 -->
+                <div class="col-md-12">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
+                        <h2 class="modal-title">Оплата заказа №12431234 </h2>
+                    </div>
+                    <!-- open .modal__payment--content__data -->
+                    <div class="modal__payment--content_data">
+                        <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
+                        <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
+                        <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
+                    </div>
+                    <!-- close .modal__payment--content__data -->
+                    <div class="modal-body">
+                        <!-- open .tab-content -->
+                        <div class="tab-content">
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane active" id="mobile">
+                                
+                                <!-- open .modal__payment--wait -->
+                                <div class="modal__payment--wait">
+                                    <h3>
+                                        <span class="preloader"/>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="45" height="45" fill="#fff">
+                                                <path opacity=".25" d="M16 0a16 16 0 0 0 0 32 16 16 0 0 0 0-32m0 4a12 12 0 0 1 0 24 12 12 0 0 1 0-28"/>
+                                                <path class="preloader_line" d="M16 0a16 16 0 0 1 16 16h-4A12 12 0 0 0 16 4z">
+                                                <animateTransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="0.8s" repeatCount="indefinite"/></path>
+                                            </svg>
+                                        </span>
+                                        Ожидаем подтверждения платежа... 
+                                    </h3>
+                                    
+                                    <p>На ваш телефон +7 (920) 254-99-91 сейчас поступит СМС с указанием точной стоимости за отправку поздравления для вашего оператора Билайн. Для оплаты необходимо ответить на СМС любым словом.</p>
+
+                                    <a href="#" class="modal__payment--wait--btn">Нажмите, если вам не пришло СМС</a>
+                                    <small>Вам будет предложено отправить СМС самостоятельно</small>
+                                </div>
+                                <!-- close .modal__payment--wait -->
+
+                                 <!-- open .modal__payment--guarantees -->
+                                <ul class="modal__payment--guarantees">
+                                    <p><b>Наши гарантии </b></p>
+                                    <li>100% гарантия доставки</li>
+                                    <li>Конфиденциальность</li>
+                                    <li>Безопасный платеж</li>
+                                    <li>Круглосуточная поддержка</li>
+                                </ul>
+                                <!-- close .modal__payment--guarantees -->
+
+                                <!-- open .modal__payment--contacts -->
+                                <div class="modal__payment--contacts">
+                                    <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
+                                </div>
+                                <!-- close .modal__payment--contacts -->                                
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="banks">
+                                hey
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="e-money">
+                                you
+                            </div>
+                            <!-- close .tab-pane -->
+                        </div>
+                        <!-- close .tab-content -->
+                    </div>
+                </div>
+                <!-- close .col-md-12 -->
+                
+            </div>
+            <!-- close .modal__payment--content -->
+            
+            
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<!-- Поп-ап "Оплата не прошла" -->           
+<div class="modal fade bs-example-modal-lg modal__payment" id="modal__payment--failed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- open .modal__payment--sidebar -->
+            <div class="modal__payment--sidebar">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#mobile" data-toggle="pill">Через мобильный телефон</a></li>
+                    <li><a href="#banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
+                    <li><a href="#e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
+                </ul>
+            </div>
+            <!-- close .modal__payment--sidebar -->
+            <!-- open .modal__payment--content -->
+            <div class="modal__payment--content">
+                <!-- open .col-md-12 -->
+                <div class="col-md-12">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
+                        <h2 class="modal-title">Оплата заказа №12431234 </h2>
+                    </div>
+                    <!-- open .modal__payment--content__data -->
+                    <div class="modal__payment--content_data">
+                        <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
+                        <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
+                        <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
+                    </div>
+                    <!-- close .modal__payment--content__data -->
+                    <div class="modal-body">
+                        <!-- open .tab-content -->
+                        <div class="tab-content">
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane active" id="mobile">
+                                
+                                <!-- open .modal__payment--wait -->
+                                <div class="modal__payment--wait modal__payment--failed">
+                                    <h3>                                     
+                                        К сожалению, оплата не прошла.
+                                    </h3>
+                                    
+                                    <p>Это могло пройзойти по нескольким причинам: у вас недостаточно средств для оплаты услуги с помощью Мобильного платежа, либо данный способ оплаты вам недоступен (например, у вас корпоративный тарифный план).</p>
+
+                                    <!-- open .modal__payment--failed--help -->
+                                    <div class="modal__payment--failed--help">
+                                        <p><b>Что делать дальше?</b></p>
+                                        <p>Пожалуйста, выберите другой способ оплаты заказа в колонке слева.</p>
+                                    </div>
+                                    <!-- close .modal__payment--failed--help -->
+
+                                </div>
+                                <!-- close .modal__payment--wait -->
+
+                                 <!-- open .modal__payment--guarantees -->
+                                <ul class="modal__payment--guarantees">
+                                    <p><b>Наши гарантии </b></p>
+                                    <li>100% гарантия доставки</li>
+                                    <li>Конфиденциальность</li>
+                                    <li>Безопасный платеж</li>
+                                    <li>Круглосуточная поддержка</li>
+                                </ul>
+                                <!-- close .modal__payment--guarantees -->
+
+                                <!-- open .modal__payment--contacts -->
+                                <div class="modal__payment--contacts">
+                                    <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
+                                </div>
+                                <!-- close .modal__payment--contacts -->                                
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="banks">
+                                hey
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="e-money">
+                                you
+                            </div>
+                            <!-- close .tab-pane -->
+                        </div>
+                        <!-- close .tab-content -->
+                    </div>
+                </div>
+                <!-- close .col-md-12 -->
+                
+            </div>
+            <!-- close .modal__payment--content -->
+            
+            
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+<!-- Поп-ап "Оплачено" -->           
+<div class="modal fade bs-example-modal-lg modal__payment" id="modal__payment--paid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- open .modal__payment--sidebar -->
+            <div class="modal__payment--sidebar">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#mobile" data-toggle="pill">Через мобильный телефон</a></li>
+                    <li><a href="#banks" data-toggle="pill">Банковская карта <img src="img/visa-b83774db582cc28bd9a96d14b3bd80ee.png" alt="" /></a></li>
+                    <li><a href="#e-money" data-toggle="pill">Электронные деньги <img src="img/robokassa-dc1d1d8e7f09eab2d24467f7135b1ac6-(1).png" alt="" /></a></li>
+                </ul>
+            </div>
+            <!-- close .modal__payment--sidebar -->
+            <!-- open .modal__payment--content -->
+            <div class="modal__payment--content">
+                <!-- open .col-md-12 -->
+                <div class="col-md-12">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/Close-hover.png" alt="" /></button>
+                        <h2 class="modal-title">Оплата заказа №12431234 </h2>
+                    </div>
+                    <!-- open .modal__payment--content__data -->
+                    <div class="modal__payment--content_data">
+                        <small>Стоимость услуги: <span class="js_modal__payment--price">129 руб.</span></small>
+                        <small>Кому доставить: <span class="js_modal__payment--phone">+7 (920) 254-99-91</span></small>
+                        <small>Время звонка: <span class="js_modal__payment--time">23 февраля 15:45</span></small>
+                    </div>
+                    <!-- close .modal__payment--content__data -->
+                    <div class="modal-body">
+                        <!-- open .tab-content -->
+                        <div class="tab-content">
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane active" id="mobile">
+                                
+                                <!-- open .modal__payment--wait -->
+                                <div class="modal__payment--paid">
+                                    <h3>     
+                                        <i class="icon--check"></i>                                
+                                        Заказ успешно оплачен. Спасибо!
+                                    </h3>
+                                    
+                                    <p>Поздравление «Поздравление от Путина Александру» будет отправлено 23 февраля в 15:45 входящим звонком на номер +7 (920) 254-99-91. После успешной доставки вам будет отправлена СМС со ссылкой на запись разговора.</p>                                   
+
+                                </div>
+                                <!-- close .modal__payment--wait -->
+
+                                <!-- open .modal__payment--present -->
+                                <div class="modal__payment--present">
+                                    <h3>Мы дарим вам скидку!</h3>
+                                    <p>Следующее поздравление, розыгрыш или признание для вас будет стоить <b>всего 70 рублей</b>. Мы вас узнаем по номеру вашего телефона. </p>
+                                    <!-- open .modal__payment--present--controls -->
+                                    <div class="modal__payment--present--controls">
+                                        <span>Срок действия: <b>31 июня 23:59</b></span>
+                                        <a href="#" class="modal__payment--present--btn">Вернуться в каталог</a>
+                                    </div>
+                                    <!-- close .modal__payment--present--controls -->
+                                </div>
+                                <!-- close .modal__payment--present -->
+
+                                 <!-- open .modal__payment--guarantees -->
+                                <ul class="modal__payment--guarantees">
+                                    <p><b>Наши гарантии </b></p>
+                                    <li>100% гарантия доставки</li>
+                                    <li>Конфиденциальность</li>
+                                    <li>Безопасный платеж</li>
+                                    <li>Круглосуточная поддержка</li>
+                                </ul>
+                                <!-- close .modal__payment--guarantees -->
+
+                                <!-- open .modal__payment--contacts -->
+                                <div class="modal__payment--contacts">
+                                    <p>Служба поддержки: <span>+7 (499) 705-70-79</span></p>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Написать нам</a>
+                                    <a href="#nowhere" class="modal__payment--contacts--btn">Вопросы и ответы</a>
+                                </div>
+                                <!-- close .modal__payment--contacts -->                                
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="banks">
+                                hey
+                            </div>
+                            <!-- close .tab-pane -->
+                            <!-- open .tab-pane -->
+                            <div class="tab-pane" id="e-money">
+                                you
+                            </div>
+                            <!-- close .tab-pane -->
+                        </div>
+                        <!-- close .tab-content -->
+                    </div>
+                </div>
+                <!-- close .col-md-12 -->
+                
+            </div>
+            <!-- close .modal__payment--content -->
+            
+            
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
 </body>
     <!-- <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script> -->

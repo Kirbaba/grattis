@@ -10,6 +10,17 @@
 	}
 }
 
+.icon--check {
+	display: inline-block;	
+	background-image: url('../img/Check-icon.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 45px;
+	height: 45px;
+	margin-right: 15px;
+}
+
+
 .dropdown {
 	a.form-control {
 		text-decoration: none;
@@ -23,6 +34,7 @@
 
 .preloader {
 	margin-right: 5px;
+	display: inline-block;
 	&_line {
 		fill: #ffdd2e;
 	}
@@ -67,4 +79,5 @@
 			transform: rotateY(180deg);
 		}
 	}
+	
 }
