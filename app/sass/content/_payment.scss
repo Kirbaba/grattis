@@ -6,6 +6,10 @@
 
 
 .modal__payment {
+
+	p, h3, h4 {
+		color: #292929;
+	}
 	.modal-content {
 		// display: block;
 		// float: left;
@@ -170,8 +174,8 @@
 		font-size: 16px;
 		color: #525252;
 		margin: 0 10px;
+		text-decoration: underline;
 		@include link {
-			text-decoration: none;
 			color: #292929;
 		}
 	}
@@ -208,6 +212,7 @@
 			float: left;
 			width: 100%;
 			margin: 0;
+			font-size: 14px;
 		}
 		li {
 			display: inline-block;
@@ -227,6 +232,7 @@
 		width: 100%;
 		text-align: center;
 		border-bottom: 1px solid #F4F4F4;
+		border-top: 1px solid #F4F4F4;
 		padding: 15px 0;
 		p, a {
 			display: inline-block;
@@ -261,6 +267,7 @@
 		position: relative;
 		width: 100%;
 		padding: 15px 0;
+		line-height: 12px;
 		small {
 			font-size: 9px;
 			color: #535353;
@@ -280,7 +287,7 @@
 			font-family: $os;
 			font-size: 20px;
 			color: #292929;
-			font-weight: 300;
+			font-weight: 400;
 		}
 		p {
 			font-size: 14px;
@@ -332,26 +339,36 @@
 		display: block;
 		float: left;
 		position: relative;
-		padding: 20px 25px;
+		padding: 15px 20px;
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
 		border: 2px solid #FFDD2E;
 		color: #292929;
+		font-family: $os;
 		h3 {
 			font-size: 28px;			
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			margin-top: 0;
+			color: #292929;
+			font-family: $os;
+			font-weight: 300;
 		}
 		p {
 			font-size: 16px;
 			text-align: left;
+			font-family: $os;
+			color: #292929;
+			b {
+				vertical-align: baseline;
+			}
 		}
 		&--controls {
 			display: block;
 			float: left;
 			position: relative;
 			width: 100%;
+			font-family: $os;
 			span {
 				font-size: 14px;
 				display: block;
@@ -467,7 +484,7 @@
 		font-size: 20px;
 		color: #292929;
 		font-family: $os;
-		font-weight: 300;
+		font-weight: 400;
 	}
 	p {
 		font-size: 14px;
@@ -484,4 +501,35 @@
     float: left;
     margin-left: 15px;
     margin-top: 20px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+
+	 .preloader_line{
+	 	display: none;
+	 }
+	 .preloader{
+	 	background-image: url('../img/rolling.gif');
+	 	background-repeat: no-repeat;
+	 	-webkit-background-size: contain;
+	 	     -o-background-size: contain;
+	 	        background-size: contain;
+	 }
+
+
+}
+
+@-ms-keyframes spin { 
+	from { 
+	    -ms-transform: rotate(0deg); 
+	} to { 
+	    -ms-transform: rotate(360deg); 
+	}
+}
+@-ms-keyframes spin_min { 
+	from { 
+	    -ms-transform: rotate(360deg); 
+	} to { 
+	    -ms-transform: rotate(0deg); 
+	}
 }
