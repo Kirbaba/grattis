@@ -393,4 +393,95 @@
 			margin-top: 5px;
 		}
 	}
+
+	.scrolltext {
+		height: 375px;
+	}
+	.modal-body {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		background-color: #FFF;
+		text-align: left;
+		padding: 25px;
+		h4 {
+			font-size: 14px;
+			font-family: $os;
+			font-weight: bold;
+			color: #292929;	
+			margin: 10px 0;
+		}
+		p {
+			font-weight: 300;
+			font-size: 14px;
+			font-family: $os;
+			color: #292929;	
+			margin: 5px 0;
+			text-align: left;
+		}
+		a {
+			color: #1D77EF;
+		}
+	}
+	.form-control {
+		padding-left: 12px;
+		padding-right: 12px;		
+		color: #292929;
+		font-size: 14px;
+		&:empty {
+			border-color: #cccccc;
+		}
+		&:invalid {
+			border-color: #D80000;
+		}
+		
+	}
+	textarea.form-control {
+		height: 85px;
+	}
+
+	.modal__write--btn {
+		@extend .modal__payment--present--btn;
+		float: left;
+		margin: 15px 0;
+		outline: none;
+		&--active {
+			border: 1px solid #ffdd2d;
+			background-color: #ffeb86;
+		}
+	}
+	.modal__write--form {
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		padding: 10px 0;
+	}
+}
+.js__modal__write--success {
+	display: none;
+	text-align: center;
+	padding: 85px 0;
+	h3 {
+		font-size: 20px;
+		color: #292929;
+		font-family: $os;
+		font-weight: 300;
+	}
+	p {
+		font-size: 14px;
+		color: #292929;
+		font-family: $os;
+		font-weight: 300;
+		text-align: center!important;
+		margin: 15px 0!important;
+	}
+}
+
+.modal__write--preloader {
+	display: none;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
 }

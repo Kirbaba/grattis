@@ -145,6 +145,7 @@ if (jQuery('#chart').length > 0) {
         opacity: 0
       })
   });
+
 });
 
 $('.getCode--show').click(function(){
@@ -198,6 +199,22 @@ $('.js-show_payment-timer').on('click', function() {
 });
 
 
+ $('.modal__write--btn').on('click', function() {    
+  $('.modal__write--form--inp').each(function(){
+      if ($(this).val()!=0) {
+        $('.modal__write--preloader').show();
+        $('.modal__write--btn').addClass('modal__write--btn--active').text("Отправляю...");
+
+        setTimeout(function() {
+          $('.js__modal__write--type').hide();
+          $('.js__modal__write--success').show();
+      }, 2000);
+    }
+  });
+   
+  });
+
+
 
 $('.js-modal--close').on('click', function() {  
   clearInterval(window.setId);
@@ -247,6 +264,14 @@ $( "#showPass" )
       $("#enter-password").attr('type','password');
     }    
   });
+
+ (function(){
+      $(window).load(function(){
+          $(".scrolltext").mCustomScrollbar({
+              theme:"inset-dark"
+          });
+      });
+  })(jQuery);
    
 
 
