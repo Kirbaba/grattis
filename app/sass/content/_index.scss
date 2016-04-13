@@ -302,3 +302,121 @@ a.chart--all {
 	display: none;
 }
 
+
+.new-section {
+	&__options {
+		display: none;
+		float: left;
+		position: relative;
+		width: 100%;
+	}
+	&__browsing {
+		display: none;
+		float: left;
+		position: relative;
+		width: 100%;
+		&--wrap {
+			display: block;
+			float: left;
+			position: relative;
+			width: 100%;
+			height: 445px;
+			margin: 0 0 15px 0;
+			background-color: #F3F3F3;
+		}
+	}
+	&--btn {
+		float: left;
+	}
+	&--more {
+		display: block;
+		float: left;
+		text-decoration: none;
+		border-bottom: 1px dashed #428bca;
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 15px;
+		@include link {
+			border-bottom-style: solid;
+			text-decoration: none;
+		}
+	}	
+	&__textarea {
+		resize: none;
+	}
+	&__design {
+		display: block;
+		float: left;
+		width: 100%;
+		margin-bottom: 15px;
+		span {
+			display: block;
+			width: 100%;
+			margin: 5px 0; 
+			color: #333333;
+			font-size: 14px;
+		}
+		&--open {
+			display: none;
+			float: left;
+			position: relative;
+			width: 100%;
+			span.labal {
+				margin-bottom: 5px;
+				display: block;
+			}
+		}
+		
+	} 
+}
+
+.color-swatch {
+	display: block;
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	text-decoration: none;
+	width: 58px;
+	height: 58px;
+	border: 1px solid #cbcbcb;
+	@include border-radius(4px);
+	@include background-clip(padding-box);
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: #333;
+	@include link {
+		color: #333;
+	}
+	&--pink {
+		background-color: #cf0c63;
+	}
+	&--yellow-green {
+		background-color: #84b72c;
+	}
+	&--blue {
+		background-color: #62b6ff;
+	}
+}	
+
+.new-section__design--yours {
+	border: 2px solid #000;
+	@include box-shadow(inset 0 2px 5px rgba(1,1,1,.18));
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.dispb {
+	display: block;
+}
+
+.form-group {
+	.btn-group {
+		display: block;
+		.btn {
+			margin-right: 0;
+			outline: none !important;
+		}
+	}
+}
