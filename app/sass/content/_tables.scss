@@ -75,3 +75,15 @@ a.table--control {
 .toggle-row {
 	margin: 0;
 }
+
+.dropdown-row-child {
+	display: none!important;
+}
+
+.step_1 td:first-of-type {
+	padding-left: 20px;
+}
+
+.step_2 td:first-of-type {
+	padding-left: 40px;
+}
