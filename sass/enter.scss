@@ -1,3 +1,5 @@
+@import "home";
+
 .enter-header {
     display: block;
     float: left;
@@ -8,7 +10,7 @@
     background-color: #FFF;
 
     &__logo {
-        font-family: $bliss;
+        font-family: 'BlissProExtraBold';;
         color: #282828;
         font-size: 34px;
         text-transform: uppercase;
@@ -16,7 +18,7 @@
         position: relative;
         text-decoration: none;
 
-        @include link {
+        &:hover, &:focus {
             text-decoration: none;
             color: #282828;
         }
@@ -45,12 +47,12 @@
         font-size: 16px;
         text-align: center;
         color: #5D5D5D;
-        font-family: $os;
+        font-family: 'Open Sans', sans-serif;
     }
 }
 
 h2.enter-title {
-    font-family: $os;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 36px;
     font-weight: 300;
@@ -85,8 +87,8 @@ h2.enter-title {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-
-        @include border-radius(4px);
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
 
         color: #5C5C5C;
         font-size: 11px;
@@ -112,7 +114,7 @@ h2.enter-title {
         font-size: 16px;
         color: #5D5D5D;
         text-align: center;
-        font-family: $os;
+        font-family: 'Open Sans', sans-serif;
         margin-bottom: 15px;
     }
 
@@ -165,8 +167,13 @@ h2.enter-title {
             color: #ACACAC;
             margin-bottom: -5px;
             position: relative;
-
-            @include transition(0.3s);
+            -webkit-transition: linear .3s all;
+               -moz-transition: linear .3s all;
+                -ms-transition: linear .3s all;
+                 -o-transition: linear .3s all;
+                    transition: linear .3s all;
+            
+            
         }
 
         span#showPass {
@@ -190,7 +197,7 @@ h2.enter-title {
     text-align: center;
     display: inline-block;
     width: 100%;
-    font-family: $os;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 

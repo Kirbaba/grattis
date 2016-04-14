@@ -349,7 +349,7 @@ a.chart--all {
 		float: left;
 		width: 100%;
 		margin-bottom: 15px;
-		span {
+		span.input-label {
 			display: block;
 			width: 100%;
 			margin: 5px 0; 
@@ -378,6 +378,7 @@ a.chart--all {
 	text-decoration: none;
 	width: 58px;
 	height: 58px;
+	margin-bottom: 15px;
 	border: 1px solid #cbcbcb;
 	@include border-radius(4px);
 	@include background-clip(padding-box);
@@ -419,4 +420,89 @@ a.chart--all {
 			outline: none !important;
 		}
 	}
+}
+
+.radio {
+	.form-group {
+		margin: 10px 0;
+	}
+}
+
+.new-section__design span.input-group-addon {
+	display: table-cell;
+    width: auto;
+    text-align: center;
+    padding: 0px 10px;
+    
+    input {
+		text-align: center;
+	    margin: 0;
+	    position: relative;
+	    vertical-align: middle;
+    }
+}
+/* .new-section__design span.arrow--small {
+	width: auto;
+	margin: 0;
+	display: inline-block;
+	padding-top: 6px !important;
+	padding-bottom: 6px !important;
+	
+}
+.new-section__design span.sreamnumber {
+	width: auto;
+	margin: 0;
+	display: inline-block;
+	padding: 0 12px !important;
+} */
+
+.new-section__design {	
+	.form-group {
+		.radio-inline {
+			margin: 0;
+			padding-left: 0;
+			padding-right: 30px;
+			label {
+				padding-left: 0;
+				margin-bottom: 0;
+			}
+			.form-control {
+				width: 80px;	
+				padding-top: 0;
+				padding-bottom: 0;			
+			}
+		}
+		label {
+			display: block;
+		}
+	}		
+}
+
+.without-title {
+	margin-top: 30px;
+}
+
+.input-code-box {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+.btn--font {
+	width: auto!important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.properties--line {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+}
+
+
+.show-block {
+	display: block !important;
 }
