@@ -46,7 +46,22 @@ jQuery(document).ready(function($) {
 
     }
 
+    $(document).on('click', '.js-vetrina--option--btn', function() {  
+      $(this).parent().parent().detach().appendTo('.js-vetrina-menu');
+      $(this).removeClass('pull-right');
+      $(this).removeClass('js-vetrina--option--btn').addClass('js-vetrina-menu--btn');
+      $(this).find("i").removeClass('fa-long-arrow-right').addClass('fa-long-arrow-left');      
+      $(this).parent().parent().prepend($(this).parent());
 
+    });
+
+    $(document).on('click', '.js-vetrina-menu--btn', function() {  
+      $(this).parent().parent().detach().appendTo('.js-vetrina--option');
+      $(this).removeClass('js-vetrina-menu--btn').addClass('js-vetrina--option--btn');
+      $(this).addClass('pull-right');      
+      $(this).find("i").removeClass('fa-long-arrow-left').addClass('fa-long-arrow-right');
+      $(this).parent().parent().append($(this).parent());
+    });
 
     $('.dropdown-menu a').click(function() {
         $(this).closest('.dropdown').find('span.sreamnumber').text($(this).attr('data-value'));
@@ -217,6 +232,9 @@ $('.js-modal--close').on('click', function() {
   $('.getCode--counter').text('0:45'); 
   $('#getCode').modal('hide');
 });
+
+
+
 
 
 
