@@ -506,3 +506,13 @@ a.chart--all {
 .show-block {
 	display: block !important;
 }
+
+.landing--design {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	.landing__item--thumb {
+		margin-right: 15px;
+	}
+}
