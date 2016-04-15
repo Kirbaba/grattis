@@ -103,7 +103,7 @@ a.table--control {
 .dropdown-row-close {
 	.show-row {
 		color: #333;
-		padding-left: 0;
+		padding: 0;
 		text-decoration: underline;
 		&:before {
 			content: "\f067";
@@ -121,7 +121,7 @@ a.table--control {
 .dropdown-row-open {
 	.show-row {
 		color: #333;
-		padding-left: 0;
+		padding: 0;
 		text-decoration: underline;
 		&:before {
 			content: "\f068";
@@ -149,8 +149,16 @@ th.header.footable-visible.footable-first-column {
     padding-left: 30px;
 }
 
-tfoot tr th:first-of-type {
-	padding-left: 30px;
+// tfoot tr th:first-of-type {
+// 	padding-left: 30px;
+// }
+
+// tr td:first-of-type {
+// 	padding-left: 30px;
+// }
+
+.step_1 td:first-of-type {
+	padding-left: 50px;
 }
 .step_1 {
 	td.footable-visible.footable-first-column {
@@ -170,4 +178,14 @@ td {
 		vertical-align: baseline;
 		margin-left: 5px;
 	}
+}
+
+.table--foot {
+	td {
+		font-weight: bold;
+	}
+}
+
+.table--bold-text {
+	font-weight: bold;
 }
