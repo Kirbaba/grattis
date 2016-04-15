@@ -5,7 +5,7 @@ $(document).ready(function(){
             row.addClass('dropdown-row-open');
             row.removeClass('dropdown-row-close');
             $('.dropdown-row-child').each(function(){
-                if($(this).attr('data-parent-row') == row.attr('id')){
+                if($(this).attr('data-parent-row') == row.attr('data-row')){
                     $(this).removeClass('dropdown-row-child');
                     //$(this).slideDown();
                 }
@@ -15,7 +15,7 @@ $(document).ready(function(){
             row.addClass('dropdown-row-close');
             row.removeClass('dropdown-row-open');
             $('.dropdown-row').each(function(){
-                if($(this).attr('data-parent-row') == row.attr('id')){
+                if($(this).attr('data-parent-row') == row.attr('data-row')){
                     $(this).addClass('dropdown-row-child');
                 }
             });
