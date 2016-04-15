@@ -98,15 +98,14 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
                     <li><a href="#stat-time" data-toggle="tab">Время</a></li>
-                    <li class="active"><a href="#stat-geo" data-toggle="tab">География</a></li>
+                    <li><a href="#stat-geo" data-toggle="tab">География</a></li>
                     <li><a href="#stat-stream" data-toggle="tab">Потоки</a></li>
                     <li><a href="#stat-mark" data-toggle="tab">Метки</a></li>
                     <li><a href="#stat-playground" data-toggle="tab">Площадки</a></li>
-                    <li><a href="#stat-orders" data-toggle="tab">Заказы</a></li>
+                    <li class="active"><a href="#stat-orders" data-toggle="tab">Заказы</a></li>
                     <li><a href="#stat-refs" data-toggle="tab">Рефералы</a></li>
                     <li><a href="#stat-content" data-toggle="tab">Контент</a></li>
                     <li><a href="#stat-cats" data-toggle="tab">Категории контента</a></li>
-                    <a href="#" class="icon-question pull-right"><i class="fa fa-question-circle"></i></a>
                 </ul>
                 
             </div>
@@ -118,7 +117,7 @@
                  
                 </div>
 
-                <div class="tab-pane active" id="stat-geo">
+                <div class="tab-pane" id="stat-geo">
                     <!-- open .stat__head -->
                     <div class="stat__head">
                         <div class="stat__head--date" >
@@ -197,106 +196,9 @@
                         <!-- close .pull-right -->
                     </div>
                     <!-- close .stat__head -->
-
-                      <!-- open .row -->
-                    <div class="row">
-                        <!-- open .col-sm-12 -->
-                        <div class="col-md-12">
-                            <div class="table-full-width">
-                                <table class="footable table table-hover table-striped sortable table--collapsing">
-                                    <colgroup>
-                                        <col class="col-md-5">
-                                    </colgroup>
-                                    <thead>
-                                        <th>Регион</th>                                       
-                                        <th data-hide="phone,tablet">Посетители</th>
-                                        <th data-hide="phone,tablet">Хиты</th>
-                                        <th data-hide="phone,tablet">Заказы</th>
-                                        <th data-hide="phone,tablet">Оплачен</th>
-                                        <th data-hide="phone,tablet">Прибыль</th>
-                                        <th data-hide="phone,tablet">CR</th>
-                                        <th data-hide="phone,tablet">STR</th>
-                                        <th data-hide="phone,tablet">EPC</th>
-                                        
-                                    </thead>
-                                    <tbody>
-                                        <tr class="dropdown-row dropdown-row-close " data-row="row_1">
-                                            <td><a href="#" class="show-row">Россия</a></td>
-                                            <td>120</td>
-                                            <td>180</td>
-                                            <td><a href="#">65</a></td>                                            
-                                            <td><a href="#">1</a></td>
-                                            <td class="table--bold-text">50</td>
-                                            <td>0.83%</td>
-                                            <td>0.83%</td>
-                                            <td>0.42р.</td>
-                                        </tr>
-                                        <tr class="dropdown-row dropdown-row-child step_1" data-row="row_2" data-parent-row="row_1">
-                                            <td>Москва</td>
-                                            <td>120</td>
-                                            <td>10</td>
-                                            <td><a href="#">3</a></td>                                            
-                                            <td><a href="#">6</a></td>
-                                            <td class="table--bold-text">4</td>
-                                            <td>0.83%</td>
-                                            <td>0.83%</td>
-                                            <td>0.42р.</td>
-                                        </tr>
-                                        <tr class="dropdown-row dropdown-row-child step_1" data-row="row_3" data-parent-row="row_1">
-                                            <td>Санкт-Питербург</td>
-                                            <td>120</td>
-                                            <td>10</td>
-                                            <td><a href="#">3</a></td>                                            
-                                            <td><a href="#">6</a></td>
-                                            <td class="table--bold-text">50</td>
-                                            <td>0.83%</td>
-                                            <td>0.83%</td>
-                                            <td>0.42р.</td>
-                                        </tr>
-                                        <tr class="dropdown-row" data-row="row_4">
-                                            <td>Соединенные Штаты Америки</td>
-                                            <td>100</td>
-                                            <td>110</td>
-                                            <td><a href="#">43</a></td>                                            
-                                            <td><a href="#">21</a></td>
-                                            <td class="table--bold-text">120</td>
-                                            <td>0.83%</td>
-                                            <td>0.83%</td>
-                                            <td>0.42р.</td>
-                                        </tr>
-                                        <tr class="dropdown-row " data-row="row_5">
-                                            <td>N/A</td>
-                                            <td>90</td>
-                                            <td>430</td>
-                                            <td><a href="#">21</a></td>                                            
-                                            <td><a href="#">4</a></td>
-                                            <td class="table--bold-text">90</td>
-                                            <td>0.83%0</td>
-                                            <td>0.83%</td>
-                                            <td>0.42р.</td>
-                                        </tr>
-
-                                        <tr class="table--foot">
-                                            <td>Итого</td>
-                                            <td >390</td>
-                                            <td>1220</td>
-                                            <td>112</td>
-                                            <td>26</td>
-                                            <td>330</td>                                            
-                                            <td>0.83%</td>
-                                            <td>0.83%</td>
-                                            <td>0.42р.</td>
-                                        </tr>
-                                    </tbody>
-                                    
-                                    
-                                </table>
-                            </div>
-                        </div>
-                        <!-- close .col-sm-12 -->
-                    </div>
-                    <!-- close .row -->
+                    
                 </div>
+
                 <div class="tab-pane" id="stat-stream">
                     <!-- open .stat__head -->
                     <div class="stat__head">
@@ -377,6 +279,7 @@
                     </div>
                     <!-- close .stat__head -->
                 </div>
+
                 <div class="tab-pane" id="stat-mark">
                     <!-- open .stat__head -->
                     <div class="stat__head">
@@ -457,6 +360,7 @@
                     </div>
                     <!-- close .stat__head -->
                 </div>
+
                 <div class="tab-pane" id="stat-playground">
                     <!-- open .stat__head -->
                     <div class="stat__head">
@@ -537,7 +441,8 @@
                     </div>
                     <!-- close .stat__head -->
                 </div>
-                <div class="tab-pane" id="stat-orders">
+
+                <div class="tab-pane active" id="stat-orders">
                     <!-- open .stat__head -->
                     <div class="stat__head">
                         <div class="stat__head--date" >
@@ -616,7 +521,69 @@
                         <!-- close .pull-right -->
                     </div>
                     <!-- close .stat__head -->
+
+                     <!-- open .row -->
+                    <div class="row">
+                        <!-- open .col-sm-12 -->
+                        <div class="col-md-12">
+                            <div class="table-full-width">
+                                <table class="footable table table-hover table-striped sortable">
+                                    
+                                    <thead>
+                                        <th>Дата и время</th>                                       
+                                        <th data-hide="phone,tablet">Получатель</th>
+                                        <th data-hide="phone,tablet">Отправитель</th>
+                                        <th data-hide="phone,tablet">Заказ</th>
+                                        <th data-hide="phone,tablet">Тариф</th>
+                                        <th data-hide="phone,tablet">Способ оплаты</th>
+                                        <th data-hide="phone,tablet">Прибыль</th>
+                                        
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2015.11.25 01:05</td>
+                                            <td>+3801234***21</td>
+                                            <td>+3801234***21</td>
+                                            <td>С Днем Рождения другу! (из м/ф "Падал прошлогодний снег")</td>                                            
+                                            <td>3 y.e.</td>
+                                            <td>SMS</td>
+                                            <td class="table--bold-text">50,21 р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015.11.25 02:43</td>
+                                            <td>+792025***91</td>
+                                            <td>+792025***91</td>
+                                            <td>Признание в любви мужчине (на мотив "Лаванды")</td>
+                                            <td>5 y.e.</td>                                            
+                                            <td>MK</td>
+                                            <td class="table--bold-text">120,01 р.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2015.11.25 23:49</td>
+                                            <td>+3751234***78</td>
+                                            <td>N/A</td>
+                                            <td>С Днем Рождения, Тимофей! (из м/ф "Падал прошлогодний с...</td>                                            
+                                            <td>10 y.e.</td>                                            
+                                            <td>Visa/MasterCard</td>
+                                            <td class="table--bold-text">90,00 р.</td>
+                                        </tr>                                       
+
+                                        <tr class="table--foot">
+                                            <td colspan="6">Итого</td>
+                                                                                     
+                                            <td>432 432,01 р.</td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                    
+                                </table>
+                            </div>
+                        </div>
+                        <!-- close .col-sm-12 -->
+                    </div>
+                    <!-- close .row -->
                 </div>
+
                 <div class="tab-pane" id="stat-refs">
                     <!-- open .stat__head -->
                     <div class="stat__head">
@@ -697,6 +664,8 @@
                     </div>
                     <!-- close .stat__head -->
                 </div>
+
+
                 <div class="tab-pane" id="stat-content">
                     <!-- open .stat__head -->
                     <div class="stat__head">
@@ -776,6 +745,8 @@
                         <!-- close .pull-right -->
                     </div>
                     <!-- close .stat__head -->
+
+                     
                 </div>
                 <div class="tab-pane" id="stat-cats">
                     <!-- open .stat__head -->

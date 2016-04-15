@@ -135,19 +135,22 @@ a.table--control {
 }
 
 
-td.footable-visible.footable-first-column {
-	padding-left: 30px;
-}
+
 
 .footable-detail-show {
 	td.footable-visible.footable-first-column, th.footable-visible.footable-first-column{
 		padding-left: 10px;
 	}
 }
-
-th.header.footable-visible.footable-first-column {
-    padding-left: 30px;
+.table--collapsing {
+	th.header.footable-visible.footable-first-column {
+    	padding-left: 30px;
+	}
+	td.footable-visible.footable-first-column {
+		padding-left: 30px;
+	}
 }
+
 
 // tfoot tr th:first-of-type {
 // 	padding-left: 30px;
@@ -190,3 +193,4 @@ td {
 .table--bold-text {
 	font-weight: bold;
 }
+
