@@ -191,31 +191,22 @@
                 <div class="row">
                     <!-- open .col-sm-6 -->
                     <div class="col-sm-6">
-                        <div class="form-group" >
-                            <label for="reservationtime">Выберите праздник</label>
-                            <div class="input-group" >
-                                <input type="text" name="reservation" id="demo" class="form-control"/>
-                                <label class="input-group-addon" for="demo"><i class="fa fa-calendar"></i></label>
-                            </div>
-                            <!-- <a href="#" class="btn btn-default date"><i class="fa fa-calendar"></i>&nbsp;
-                            <span></span></a> -->
+                        <div class="form-group">
+                            <label>Выберите праздник</label>
+                            <div class="dropdown" id="drop2">
+                                <a href="#nowhere" id="dLabel2" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                    <span class="sreamnumber">03/20/2016 - 03/26/2016</span>
+                                    <span class="pull-right select--button--icon">
+                                        <span><i class="fa fa-calendar"></i></span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">                                   
+                                    <li><a href="#nowhere" data-value="03/20/2016 - 03/26/2016">03/20/2016 - 03/26/2016</a></li>
+                                    <li><a href="#nowhere" data-value="04/01/2016 - 04/06/2016">04/01/2016 - 04/06/2016</a></li>
+                                </ul>
+                            </div>                                        
                         </div>
-                        <!-- <div  class="pull-right">
-                            <input type="text" name="datefilter" class="form-control" placeholder="Виджет #1">
-                            
-                            <span class="pull-right">
-                                <span class="caret"></span>
-                            </span>   
-                            
-                        </div> -->
-
-
-                        <!-- <div class="form-group" id="demo">
-                               <label>Выберите праздник</label>                            
-                                   <span class="pull-right">
-                                       <span class="caret"></span>
-                                   </span>                                       
-                           </div>       -->   
+                                       
                     </div>
                     <!-- close .col-sm-6 -->
                 </div>
@@ -410,8 +401,8 @@
                                          <label>Дизайн</label>
                                             <div class="btn-group">
                                                 
-                                                <button type="button" class="btn btn-default">Классический</button>
-                                                <button type="button" class="btn btn-default">Плоский</button>
+                                                <button type="button" class="btn btn-switch btn-default active">Классический</button>
+                                                <button type="button" class="btn btn-switch btn-default">Плоский</button>
                                             </div>
                                         </div>
                                     </div>
@@ -422,8 +413,8 @@
                                             <label>Верстка</label>
                                             <div class="btn-group">
                                                 
-                                                <button type="button" class="btn btn-default">Фиксированная</button>
-                                                <button type="button" class="btn btn-default">Резиновая</button>
+                                                <button type="button" class="btn btn-switch btn-default active">Фиксированная</button>
+                                                <button type="button" class="btn btn-switch btn-default">Резиновая</button>
                                             </div>
                                         </div>
                                     </div>

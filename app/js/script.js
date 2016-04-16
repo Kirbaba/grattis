@@ -291,11 +291,59 @@ $('.new-section--more').on("click", function() {
     event.preventDefault();
     $('.new-section__options').toggle();
   });
-
-$('.new-section__design--yours').on("click", function() {
+   
+$('.btn--font').on("click", function() {
     event.preventDefault();
-    $('.new-section__design--open').toggle();
+    $(this).toggleClass("active");
   });
+
+$('.btn-switch').click(function() { 
+    $(this).parent().children().each(function() {
+        $(this).removeClass('active');
+    });
+    $(this).addClass('active');
+});
+
+
+$('input[name="check"').on("change", function() {
+    if($(this).val()=="yours") {
+        if($(this).attr('checked', true)) {
+            $('.new-section__design--open').show();
+        } else {
+            $('.new-section__design--open').hide();
+        }
+    } else {
+        $('.new-section__design--open').hide();
+    }   
+    
+});
+
+$('input[name="menu__optionsRadios"').on("change", function() {
+    if($(this).val()=="option2") {
+        if($(this).attr('checked', true)) {
+            $('.menu__constructor').show();
+        } else {
+            $('.menu__constructor').hide();
+        }
+    } else {
+        $('.menu__constructor').hide();
+    }   
+    
+});
+
+$('input[name="congratulations_sheet"').on("change", function() {
+    if($(this).val()=="option2") {
+        if($(this).attr('checked', true)) {
+            $('.id--list').show();
+        } else {
+            $('.id--list').hide();
+        }
+    } else {
+        $('.id--list').hide();
+    }   
+    
+  });
+
 
 $('.js__show--browsing').on("click", function() {
     event.preventDefault();

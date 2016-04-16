@@ -208,18 +208,18 @@
                             <!-- open .row -->
                             <div class="row">
                                 <!-- open .col-sm-4 -->
-                                <div class="col-md-6">
+                                 <div class="col-md-6">
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            <input type="radio" name="congratulations_sheet" id="optionsRadios1" value="option1" checked>
                                             Самые продаваемые поздравления
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            <input type="radio" name="congratulations_sheet" id="optionsRadios2" value="option2">
                                             Свой список (ввести id поздравлений через запятую) 
-                                            <div class="form-group">                                     
+                                            <div class="form-group id--list">                                     
                                                 <input type="text" class="form-control" placeholder="9099, 123, 4325, 5452, 1230, 5431">
                                             </div>
                                         </label>
@@ -254,8 +254,8 @@
                                          <label>Дизайн</label>
                                             <div class="btn-group">
                                                 
-                                                <button type="button" class="btn btn-default">Старый</button>
-                                                <button type="button" class="btn btn-default">Новый</button>
+                                                <button type="button" class="btn btn-switch btn-default active">Старый</button>
+                                                <button type="button" class="btn btn-switch btn-default">Новый</button>
                                             </div>
                                         </div>
                                     </div>
@@ -346,11 +346,29 @@
                                 <div class="row">
                                     <!-- open .col-sm-12 -->
                                     <div class="col-sm-12">
+
                                           <span class="input-label">Цветовая схема</span>
-                                            <a href="#nowhere" class="color-swatch color-swatch--blue"></a>
-                                            <a href="#nowhere" class="color-swatch color-swatch--yellow-green"></a>
-                                            <a href="#nowhere" class="color-swatch color-swatch--pink"></a>
-                                            <a href="#nowhere" class="color-swatch new-section__design--yours">Свой стиль</a>
+                                              <div class="color-shcema color-shcema--strong">
+                                                <input type="radio" value="blue" id="blue" name="check"/>
+                                                <label for="blue">
+                                                    <span class="color-swatch--blue"></span>
+                                                </label>
+                                                
+                                                <input type="radio" value="yellow-green" id="yellow-green" name="check"/>
+                                                <label for="yellow-green">
+                                                    <span class="color-swatch--yellow-green"></span>
+                                                </label>
+
+                                                <input type="radio" value="pink" id="pink" name="check"/>
+                                                <label for="pink">
+                                                    <span class="color-swatch--pink"></span>
+                                                </label>
+
+                                                <input type="radio" class="new-section__design--yours--radio" value="yours" id="yours" name="check"/>
+                                                <label for="yours">
+                                                    <span class="new-section__design--yours">Свой стиль</span>
+                                                </label>
+                                            </div>
                                     </div>
                                     <!-- close .col-sm-12 -->
                                 </div>
@@ -498,22 +516,22 @@
                                                 <span class="input-label">Вид плеера</span>
                                                 <!-- open .player-type -->
                                                 <div class="player-type">
-                                                    <input type="radio" value="type1" id="type1" name="check"/>
+                                                    <input type="radio" value="type1" id="type1" name="player-types"/>
                                                     <label for="type1">
                                                         <span><img src="img/Group-7.png" alt="" /></span>
                                                     </label>
                                                     
-                                                    <input type="radio" value="type2" id="type2" name="check"/>
+                                                    <input type="radio" value="type2" id="type2" name="player-types"/>
                                                     <label for="type2">
                                                         <span><img src="img/Group-9.png" alt="" /></span>
                                                     </label>
 
-                                                    <input type="radio" value="type3" id="type3" name="check"/>
+                                                    <input type="radio" value="type3" id="type3" name="player-types"/>
                                                     <label for="type3">
                                                         <span><img src="img/Group-8.png" alt="" /></span>
                                                     </label>
 
-                                                    <input type="radio" value="type4" id="type4" name="check"/>
+                                                    <input type="radio" value="type4" id="type4" name="player-types"/>
                                                     <label for="type4">
                                                         <span><img src="img/Play-copy 4.png" alt="" /></span>
                                                     </label>

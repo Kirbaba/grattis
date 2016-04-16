@@ -140,6 +140,12 @@
 	input[type="radio"]:checked + label span{   
 		border: 2px solid #000;
 	}
+	&--strong {
+		input[type="radio"] + label span {
+		    width: 58px;
+		    height: 58px;
+		}
+	}
 }
 
 
@@ -199,3 +205,4 @@
 		}
 	}
 }
+
