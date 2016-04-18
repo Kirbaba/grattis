@@ -5,6 +5,8 @@ var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var jsmin = require('gulp-jsmin');
 var includer = require('gulp-htmlincluder');
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
 
 gulp.task('minify-css', function() {
   return gulp.src('css/style.css')
@@ -19,7 +21,14 @@ gulp.task('styles', function() {
             suffix: ".min",
             extname: ".css"
         }))
-        .pipe(gulp.dest('./sass/'));
+        .pipe(gulp.dest('./sass/'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: "grattis"
+    });
 });
 
 gulp.task ('min-image', function(cb) {
@@ -39,7 +48,8 @@ gulp.task('compress', function() {
         suffix: ".min",
         extname: ".js"
     }))
-    .pipe(gulp.dest('js'));
+    .pipe(gulp.dest('js'))
+    .pipe(browserSync.stream());
     
 });
 
@@ -54,8 +64,8 @@ gulp.task('watch', function() {
 	gulp.watch('app/sass/**/*.scss', function(){
 		gulp.run('minify-css');
 		gulp.run('styles');
-	});
+	},reload);
   gulp.watch('app/js/*', function() {
        gulp.run('compress');
-  });
-});4
+  },reload);
+});

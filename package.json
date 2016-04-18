@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Kirbaba/grattis#readme",
   "devDependencies": {
+    "browser-sync": "^2.12.3",
     "gulp": "^3.9.1",
     "gulp-html-extend": "^1.1.6",
     "gulp-htmlincluder": "^0.1.0",

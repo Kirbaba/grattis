@@ -173,9 +173,13 @@ a.table--control {
 		padding-left: 70px;
 	}
 }
-
+.menu__constructor {
+	td button i {
+		color: #FFF;
+	}
+}
 td {
-	i {
+	.table--icon--right {
 		font-size: 18px!important;
 		color: #EFAD57;
 		vertical-align: baseline;
