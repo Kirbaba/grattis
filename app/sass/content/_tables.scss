@@ -149,6 +149,13 @@ a.table--control {
 	td.footable-visible.footable-first-column {
 		padding-left: 30px;
 	}
+	tr>th, tr>td {		
+    	border-left: 1px solid #ddd;
+    	&:first-of-type {
+    		border-left: none;
+    	}
+	}
+	
 }
 
 
