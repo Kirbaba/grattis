@@ -105,7 +105,10 @@ a.table--control {
 		color: #333;
 		padding: 0;
 		text-decoration: underline;
+		position: relative;
 		&:before {
+			position: absolute;
+			left: -20px;
 			content: "\f067";
 			font-size: 14px;
 			font-family: FontAwesome;
@@ -123,7 +126,10 @@ a.table--control {
 		color: #333;
 		padding: 0;
 		text-decoration: underline;
+		position: relative;
 		&:before {
+			position: absolute;
+			left: -20px;
 			content: "\f068";
 			font-size: 14px;
 			font-family: FontAwesome;
