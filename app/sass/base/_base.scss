@@ -277,5 +277,13 @@ a:not([href]) {
 	.table--collapsing tr>td:first-of-type {
 		padding-left: 30px;
 	}
+	.table-full-width {
+	    display: block;
+	    float: left;
+	    width: 100%;
+	}
+	.stat__head--date {
+		width: 200px;
+	}
 }
 
