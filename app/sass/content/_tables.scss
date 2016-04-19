@@ -204,6 +204,9 @@ td {
 	background-color: #FFF;
 	td {
 		font-weight: bold;
+		&:first-child {
+			padding-left: 30px;
+		}
 	}
 }
 

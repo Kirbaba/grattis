@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="format-detection" content="telephone=no">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -16,25 +16,20 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="sass/style.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body  class="statistics-page">
     
 <nav class="navbar navbar-default navigation" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
+            
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="" />
                 Grattis
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Cтатистика</a></li>                
                 <li class="dropdown-cust">
@@ -531,12 +526,12 @@
                                     
                                     <thead>
                                         <th>Дата и время</th>                                       
-                                        <th data-hide="phone,tablet">Получатель</th>
-                                        <th data-hide="phone,tablet">Отправитель</th>
-                                        <th data-hide="phone,tablet">Заказ</th>
-                                        <th data-hide="phone,tablet">Тариф</th>
-                                        <th data-hide="phone,tablet">Способ оплаты</th>
-                                        <th data-hide="phone,tablet">Прибыль</th>
+                                        <th>Получатель</th>
+                                        <th>Отправитель</th>
+                                        <th>Заказ</th>
+                                        <th>Тариф</th>
+                                        <th>Способ оплаты</th>
+                                        <th>Прибыль</th>
                                         
                                     </thead>
                                     <tbody>
@@ -566,14 +561,15 @@
                                             <td>10 y.e.</td>                                            
                                             <td>Visa/MasterCard</td>
                                             <td class="table--bold-text">90,00 р.</td>
-                                        </tr>                                       
-
+                                        </tr>  
+                                    </tbody>
+                                    <tfoot>
                                         <tr class="table--foot">
                                             <td colspan="6">Итого</td>
                                                                                      
                                             <td>432 432,01 р.</td>
                                         </tr>
-                                    </tbody>
+                                    </tfoot>
                                     
                                     
                                 </table>
